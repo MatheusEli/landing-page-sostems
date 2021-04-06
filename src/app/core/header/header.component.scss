@@ -1,0 +1,56 @@
+*{
+    font-family: 'Montserrat' !important;
+}
+
+.cabecalho{
+    font-weight: 500;
+    background-color: black;
+    padding: 2em 2.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-TEMS{
+    width: 4em;
+}
+
+.cabecalho-navegacao{
+    width: 65%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    text-transform: uppercase;
+}
+
+.menu-opcao{
+    font-size: .9em;
+}
+
+.menu-opcao-link{
+    color: white;
+    text-decoration: none;
+}
+
+.botao-doar{
+    background-color: dodgerblue;
+    color: white;
+    font-weight: 650;
+    font-size: 1em;
+    padding: .5em 1.3em;
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.botao-doar:hover{
+
+    background-color: black;
+    color: dodgerblue;
+}

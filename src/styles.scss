@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+  @font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: url(./assets/montserrat/Montserrat-Regular.ttf);
+  }
+  @font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: url(./assets/montserrat/Montserrat-Medium.ttf);
+  }
+  @font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    src: url(./assets/montserrat/Montserrat-Bold.ttf);
+  }
+  @font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./assets/open-sans/OpenSans-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: url(./assets/open-sans/OpenSans-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url(./assets/open-sans/OpenSans-Bold.ttf);
+  }
