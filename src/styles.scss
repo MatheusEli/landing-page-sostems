@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
 
   @font-face {
     font-family: Montserrat;
@@ -35,4 +36,10 @@
     font-style: normal;
     font-weight: 700;
     src: url(./assets/open-sans/OpenSans-Bold.ttf);
+  }
+  @font-face {
+    font-family:  "Signature";
+    font-style: normal;
+    font-weight: 600;
+    src: url(./assets/authentic-signature/Authentic-Signature.ttf)
   }

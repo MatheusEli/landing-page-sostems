@@ -1,0 +1,42 @@
+*{
+    font-family: 'Montserrat';
+}
+
+.bloco-principal{
+    padding-bottom: 20%;
+    background-color: black;
+    color: white;
+}
+
+.linha-cabecalho{
+    width: 88%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    background-color: dodgerblue;
+    height: .1px;
+}
+
+.bloco-textos{
+    width: 60%;
+    margin-left: auto;
+    padding-right: 2%;
+    text-align: right;
+}
+
+.titulo-principal{
+    font-size: 105px;
+    font-weight: 700;
+    margin-bottom: .2em;
+}
+
+.titulo-personalizado{
+    font-family: 'Signature';
+    font-size: 125px;
+    color: goldenrod;
+}
+
+.subtitulo-principal{
+    line-height: 23px;
+    margin-left: auto;
+    width: 70%;
+}
