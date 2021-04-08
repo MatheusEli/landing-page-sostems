@@ -122,6 +122,10 @@
   transition: 0.3s;
 }
 
+.botao-doar:focus{
+  outline: none;
+}
+
 .botao-doar:hover {
   background-color: black;
   color: dodgerblue;

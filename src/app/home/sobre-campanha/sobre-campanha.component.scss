@@ -3,15 +3,76 @@
 }
 
 .bloco-sobre-campanha{
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  margin: 6em auto;
 }
 
 .logo-sostems{
-  width: 35%;
+  width: 32%;
   margin: 0;
+}
+
+.bloco-texto-sobre-campanha{
+  width: 60%;
+  margin-right: auto;
+}
+
+.texto-sobre-campanha{
+  color: #757575;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.texto-sobre-campanha:last-of-type{
+  margin-bottom: 2em;
+}
+
+.texto-personalizado{
+  color: #4f8cd2;
+  font-weight: 600;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.lista-despesas{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3em 0;
+}
+
+.img-despesa{
+  width: 4.5em;
+}
+
+.texto-img-despesa{
+  margin-top: 1em;
+  text-align: center;
+}
+
+.botao-ajude-agora {
+  font-weight: 650;
+  font-size: 1.2em;
+  padding: 0.6em 2em;
+  border-radius: 25px;
+  background-color: dodgerblue;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao-ajude-agora:focus{
+  outline: none;
+}
+
+.botao-ajude-agora:hover {
+  background-color: black;
+  color: dodgerblue;
 }
