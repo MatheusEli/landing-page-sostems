@@ -80,6 +80,7 @@
   background-color: white;
 }
 
+
 .cabecalho {
   font-weight: 500;
   background-color: black;
@@ -126,6 +127,9 @@
   outline: none;
 }
 
+.hamburger:focus{
+  outline: none;
+}
 .botao-doar:hover {
   background-color: black;
   color: dodgerblue;
