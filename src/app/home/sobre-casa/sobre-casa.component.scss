@@ -1,56 +1,391 @@
 @media (max-width: 767px) {
+  .bloco-sobre-casa {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5em 0;
+  }
+
+  .titulo-personalizado {
+    text-align: center;
+    font-size: 55px;
+  }
+
+  .video-sobre-casa {
+    width: 100%;
+  }
+
+  .titulo-principal {
+    font-size: 40px;
+    margin-top: -10px;
+  }
+
+  .texto-sobre-casa {
+    margin-top: 2em;
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .bloco-sobre-casa-21-anos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0;
+  }
+
+  .slide {
+    width: 100%;
+  }
+
+  .bloco-texto-21-anos {
+    font-size: 17px;
+    line-height: 20px;
+    width: 100%;
+  }
+
+  .titulo-21-anos {
+    font-size: 50px;
+    margin-top: 0.8em;
+    line-height: 40px;
+    text-align: left;
+    margin-bottom: 0.5em;
+  }
+
+  .lista-dirigentes li {
+    width: 30%;
+    margin: 0 0.1em;
+  }
+  .texto-dirigentes {
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 2em;
+    text-align: left;
+  }
 }
 
 @media (max-width: 1018px) and (min-width: 768px) {
+  .bloco-sobre-casa {
+    width: 90%;
+    margin: 0 auto;
+    padding: 4em 0;
+  }
+
+  .titulo-principal {
+    font-size: 60px;
+    margin-top: -11px;
+  }
+  .texto-sobre-casa {
+    margin-top: 2em;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .bloco-sobre-casa-21-anos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4em 0;
+  }
+
+  .slide {
+    width: 40%;
+  }
+
+  .bloco-texto-21-anos {
+    font-size: 20px;
+    line-height: 25px;
+    width: 55%;
+  }
+
+  .titulo-personalizado {
+    text-align: center;
+    font-size: 55px;
+  }
+
+  .video-sobre-casa {
+    width: 100%;
+  }
+
+  .titulo-21-anos {
+    font-size: 50px;
+    line-height: 40px;
+    text-align: left;
+    margin-bottom: 0.7em;
+  }
+
+  .lista-dirigentes li {
+    width: 15%;
+    margin: 0 1em;
+  }
+  .texto-dirigentes {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 3em;
+    text-align: center;
+  }
 }
 
 @media (max-width: 1140px) and (min-width: 1019px) {
+  .bloco-sobre-casa {
+    width: 90%;
+    margin: 0 auto;
+    padding: 9em 0;
+  }
+
+  .titulo-principal {
+    font-size: 60px;
+    margin-top: -11px;
+  }
+  .texto-sobre-casa {
+    margin-top: 2em;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .bloco-sobre-casa-21-anos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7em 0;
+  }
+
+  .slide {
+    width: 40%;
+  }
+
+  .bloco-texto-21-anos {
+    font-size: 20px;
+    line-height: 25px;
+    width: 60%;
+    margin-left: 0.9em;
+  }
+
+  .titulo-personalizado {
+    text-align: center;
+    font-size: 55px;
+  }
+
+  .video-sobre-casa {
+    width: 800px;
+    display: block;
+  }
+
+  .titulo-21-anos {
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 0.7em;
+  }
+
+  .lista-dirigentes li {
+    width: 15%;
+    margin: 0 1em;
+  }
+  .texto-dirigentes {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 3em;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1141px) {
-}
-
-@media (min-width: 1600px) {
-}
-
-* {
-    font-family: "Montserrat";
-}
-
-.container-sobre-casa {
-    background-color: #fdfaf7;
-}
-
-.bloco-sobre-casa {
+  .bloco-sobre-casa {
     width: 75%;
     margin: 0 auto;
     padding: 9em 0;
+  }
+
+  .titulo-principal {
+    font-size: 60px;
+    margin-top: -11px;
+  }
+  .texto-sobre-casa {
+    margin-top: 2em;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .bloco-sobre-casa-21-anos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7em 0;
+  }
+
+  .slide {
+    width: 40%;
+  }
+
+  .bloco-texto-21-anos {
+    font-size: 20px;
+    line-height: 25px;
+    width: 70%;
+    margin-left: 1em;
+  }
+
+  .titulo-personalizado {
+    text-align: center;
+    font-size: 55px;
+  }
+
+  .video-sobre-casa {
+    width: 800px;
+    display: block;
+  }
+
+  .titulo-21-anos {
+    font-size: 50px;
+    line-height: 40px;
+    text-align: left;
+    margin-bottom: 0.7em;
+  }
+
+  .lista-dirigentes li {
+    width: 15%;
+    margin: 0 1em;
+  }
+  .texto-dirigentes {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 3em;
+    text-align: center;
+  }
 }
 
-.titulo-principal {
-    color: dodgerblue;
+@media (min-width: 1600px) {
+  .bloco-sobre-casa {
+    width: 62%;
+    margin: 0 auto;
+    padding: 9em 0;
+  }
+  .texto-sobre-casa {
+    margin-top: 2em;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .bloco-sobre-casa-21-anos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7em 0;
+  }
+
+  .slide {
+    width: 40%;
+  }
+
+  .bloco-texto-21-anos {
+    font-size: 20px;
+    line-height: 25px;
+    width: 55%;
+  }
+
+  .titulo-personalizado {
     text-align: center;
+    font-size: 55px;
+  }
+
+  .video-sobre-casa {
+    width: 800px;
+    display: block;
+  }
+
+  .titulo-21-anos {
     font-size: 50px;
-    font-weight: 600;
-    margin-top: -11px;
+    text-align: left;
+    margin-bottom: 0.7em;
+  }
+
+  .lista-dirigentes li {
+    width: 15%;
+    margin: 0 1em;
+  }
+
+  .texto-dirigentes {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 3em;
+    text-align: center;
+  }
+}
+
+* {
+  font-family: "Montserrat";
+}
+
+.container-sobre-casa {
+  background-color: #fdfaf7;
 }
 
 .titulo-personalizado {
-    font-family: "Signature";
-    text-align: center;
-    font-size: 45px;
-    color: goldenrod;
+  font-family: "Signature";
+  color: goldenrod;
 }
 
-.video-sobre-casa{
-    margin-top: 3em;
+.titulo-principal {
+  color: dodgerblue;
+  text-align: center;
+  font-weight: 600;
 }
 
-.texto-sobre-casa{
-    margin-top: 2em;
-    color: #757575;
+.video-sobre-casa {
+  margin: 0 auto;
+  margin-top: 3em;
 }
 
-.bolder{
-    font-weight: 600;
+.texto-sobre-casa {
+  color: #757575;
+}
+
+.bolder {
+  font-weight: 600;
+}
+
+.slide {
+  border-radius: 25px;
+}
+
+.bloco-texto-21-anos {
+  color: #757575;
+}
+
+.bloco-sobre-casa-dirigentes {
+  margin: 0 auto;
+}
+.lista-dirigentes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-dirigentes {
+  width: 100%;
+  height: 18em;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.texto-dirigentes {
+  color: #757575;
+}
+
+.botao-ajude-agora {
+  font-weight: 650;
+  font-size: 1.2em;
+  padding: 0.6em 2em;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3em;
+  border-radius: 25px;
+  background-color: #e37f1e;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao-ajude-agora:focus {
+  outline: none;
+}
+
+.botao-ajude-agora:hover {
+  background-color: #fdfaf7;
+  color: #e37f1e;
 }

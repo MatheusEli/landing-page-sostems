@@ -1,12 +1,12 @@
 @media (max-width: 767px) {
   .bloco-sobre-campanha {
     width: 90%;
-    margin: 0 auto;
+    margin: 5em auto;
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
   }
-  
+
   .logo-sostems {
     width: 80%;
     margin: 0 auto;
@@ -16,10 +16,17 @@
     font-size: 17px;
     line-height: 20px;
   }
-  
-  .botao-ajude-agora{
+
+  .botao-ajude-agora {
     display: block;
     margin: 0 auto;
+  }
+
+  .lista-despesas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 0;
   }
 
   .img-despesa {
@@ -29,14 +36,14 @@
 
 @media (max-width: 1018px) and (min-width: 768px) {
   .bloco-sobre-campanha {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     margin-bottom: 4em;
   }
-  
+
   .logo-sostems {
     width: 50%;
     margin: 0 auto;
@@ -45,29 +52,37 @@
   .texto-sobre-campanha {
     font-size: 20px;
     line-height: 25px;
+    text-align: center;
   }
 
-  .botao-ajude-agora{
+  .botao-ajude-agora {
     display: block;
     margin: 0 auto;
+  }
+
+  .lista-despesas {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em auto;
   }
 
   .img-despesa {
     width: 4.5em;
   }
-  
 }
 
 @media (max-width: 1140px) and (min-width: 1019px) {
   .bloco-sobre-campanha {
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 6em auto;
   }
-  
+
   .logo-sostems {
     width: 32%;
     margin: 0;
@@ -78,10 +93,17 @@
     line-height: 25px;
   }
 
+  .lista-despesas {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em auto;
+  }
+
   .img-despesa {
     width: 4.5em;
   }
-  
 }
 
 @media (min-width: 1141px) {
@@ -104,14 +126,19 @@
     line-height: 25px;
   }
 
+  .lista-despesas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 0;
+  }
+
   .img-despesa {
     width: 4.5em;
   }
-  
 }
 
-@media(min-width: 1600px){
-
+@media (min-width: 1600px) {
   .bloco-sobre-campanha {
     width: 62%;
     margin: 0 auto;
@@ -129,6 +156,14 @@
   .texto-sobre-campanha {
     font-size: 20px;
     line-height: 25px;
+  }
+
+  .lista-despesas {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 0;
   }
 
   .img-despesa {
@@ -161,13 +196,6 @@
   font-weight: 600;
 }
 
-.lista-despesas {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 3em 0;
-}
-
 .texto-img-despesa {
   margin-top: 1em;
   text-align: center;
@@ -191,6 +219,6 @@
 }
 
 .botao-ajude-agora:hover {
-  background-color: black;
+  background-color: white;
   color: dodgerblue;
 }
