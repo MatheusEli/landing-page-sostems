@@ -1,59 +1,177 @@
-*{
-  font-family: 'Montserrat';
+@media (max-width: 767px) {
+  .bloco-sobre-campanha {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .logo-sostems {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .texto-sobre-campanha {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  
+  .botao-ajude-agora{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .img-despesa {
+    width: 3.5em;
+  }
 }
 
-.bloco-sobre-campanha{
-  width: 75%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 6em auto;
+@media (max-width: 1018px) and (min-width: 768px) {
+  .bloco-sobre-campanha {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 4em;
+  }
+  
+  .logo-sostems {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .texto-sobre-campanha {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .botao-ajude-agora{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .img-despesa {
+    width: 4.5em;
+  }
+  
 }
 
-.logo-sostems{
-  width: 32%;
-  margin: 0;
+@media (max-width: 1140px) and (min-width: 1019px) {
+  .bloco-sobre-campanha {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6em auto;
+  }
+  
+  .logo-sostems {
+    width: 32%;
+    margin: 0;
+  }
+
+  .texto-sobre-campanha {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .img-despesa {
+    width: 4.5em;
+  }
+  
 }
 
-.bloco-texto-sobre-campanha{
-  width: 60%;
+@media (min-width: 1141px) {
+  .bloco-sobre-campanha {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 9em auto;
+  }
+
+  .logo-sostems {
+    width: 32%;
+    margin: 0;
+  }
+
+  .texto-sobre-campanha {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .img-despesa {
+    width: 4.5em;
+  }
+  
+}
+
+@media(min-width: 1600px){
+
+  .bloco-sobre-campanha {
+    width: 62%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 9em auto;
+  }
+
+  .logo-sostems {
+    width: 32%;
+    margin: 0;
+  }
+
+  .texto-sobre-campanha {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .img-despesa {
+    width: 4.5em;
+  }
+}
+
+* {
+  font-family: "Montserrat";
+}
+
+.bloco-texto-sobre-campanha {
   margin-right: auto;
 }
 
-.texto-sobre-campanha{
+.texto-sobre-campanha {
   color: #757575;
-  font-size: 20px;
-  line-height: 25px;
 }
 
-.texto-sobre-campanha:last-of-type{
+.texto-sobre-campanha:last-of-type {
   margin-bottom: 2em;
 }
 
-.texto-personalizado{
+.texto-personalizado {
   color: #4f8cd2;
   font-weight: 600;
 }
 
-.bold{
+.bold {
   font-weight: 600;
 }
 
-.lista-despesas{
+.lista-despesas {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 3em 0;
 }
 
-.img-despesa{
-  width: 4.5em;
-}
-
-.texto-img-despesa{
+.texto-img-despesa {
   margin-top: 1em;
   text-align: center;
+  color: #757575;
 }
 
 .botao-ajude-agora {
@@ -68,7 +186,7 @@
   transition: 0.3s;
 }
 
-.botao-ajude-agora:focus{
+.botao-ajude-agora:focus {
   outline: none;
 }
 

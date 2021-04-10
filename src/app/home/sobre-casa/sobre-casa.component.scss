@@ -1,0 +1,56 @@
+@media (max-width: 767px) {
+}
+
+@media (max-width: 1018px) and (min-width: 768px) {
+}
+
+@media (max-width: 1140px) and (min-width: 1019px) {
+}
+
+@media (min-width: 1141px) {
+}
+
+@media (min-width: 1600px) {
+}
+
+* {
+    font-family: "Montserrat";
+}
+
+.container-sobre-casa {
+    background-color: #fdfaf7;
+}
+
+.bloco-sobre-casa {
+    width: 75%;
+    margin: 0 auto;
+    padding: 9em 0;
+}
+
+.titulo-principal {
+    color: dodgerblue;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: -11px;
+}
+
+.titulo-personalizado {
+    font-family: "Signature";
+    text-align: center;
+    font-size: 45px;
+    color: goldenrod;
+}
+
+.video-sobre-casa{
+    margin-top: 3em;
+}
+
+.texto-sobre-casa{
+    margin-top: 2em;
+    color: #757575;
+}
+
+.bolder{
+    font-weight: 600;
+}
