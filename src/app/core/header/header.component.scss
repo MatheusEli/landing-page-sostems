@@ -1,79 +1,3 @@
-@media (max-width: 767px) {
-  .cabecalho {
-    padding: 1em 2%;
-  }
-  .cabecalho-navegacao {
-    width: 65%;
-  }
-  .cabecalho-navegacao {
-    display: none;
-  }
-  .botao-doar {
-    font-weight: 650;
-    font-size: 0.9em;
-    width: 4.7em;
-    height: 4.5em;
-    border-radius: 100%;
-  }
-}
-@media (max-width: 1018px) and (min-width: 768px) {
-  .cabecalho {
-    padding: 2em 2%;
-  }
-  .cabecalho-navegacao {
-    width: 100%;
-  }
-  .hamburger {
-    display: none;
-  }
-  .logo-TEMS {
-    display: none;
-  }
-  .botao-doar {
-    font-weight: 650;
-    font-size: 1em;
-    padding: 0.5em 1.3em;
-    border-radius: 20px;
-  }
-
-  .botao-doar{
-    display: none;
-  }
-}
-@media (max-width: 1140px) and (min-width: 1019px) {
-  .cabecalho {
-    padding: 2em 2%;
-  }
-  .cabecalho-navegacao {
-    width: 75%;
-  }
-  .botao-doar {
-    font-weight: 650;
-    font-size: 1em;
-    padding: 0.5em 1.3em;
-    border-radius: 20px;
-  }
-  .hamburger {
-    display: none;
-  }
-}
-@media (min-width: 1141px) {
-  .cabecalho {
-    padding: 2em 2%;
-  }
-  .cabecalho-navegacao {
-    width: 65%;
-  }
-  .botao-doar {
-    font-weight: 650;
-    font-size: 1em;
-    padding: 0.5em 1.3em;
-    border-radius: 20px;
-  }
-  .hamburger {
-    display: none;
-  }
-}
 * {
   font-family: "Montserrat" !important;
 }
@@ -83,7 +7,6 @@
 .hamburger-inner {
   background-color: white;
 }
-
 
 .cabecalho {
   font-weight: 500;
@@ -127,14 +50,97 @@
   transition: 0.3s;
 }
 
-.botao-doar:focus{
+.botao-doar:focus {
   outline: none;
 }
 
-.hamburger:focus{
+.hamburger:focus {
   outline: none;
 }
 .botao-doar:hover {
   background-color: black;
   color: dodgerblue;
+}
+
+.cabecalho {
+  padding: 1em 2%;
+}
+.cabecalho-navegacao {
+  width: 65%;
+  display: none;
+}
+.botao-doar {
+  font-weight: 650;
+  font-size: 0.9em;
+  width: 4.7em;
+  height: 4.5em;
+  border-radius: 100%;
+}
+
+@media (max-width: 1018px) and (min-width: 768px) {
+  .cabecalho {
+    padding: 2em 2%;
+  }
+  .cabecalho-navegacao {
+    width: 100%;
+    display: block;
+  }
+  .hamburger {
+    display: none;
+  }
+  .logo-TEMS {
+    display: none;
+  }
+  .botao-doar {
+    font-weight: 650;
+    font-size: 1em;
+    padding: 0.5em 1.3em;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+  }
+
+  .botao-doar {
+    display: none;
+  }
+}
+@media (max-width: 1140px) and (min-width: 1019px) {
+  .cabecalho {
+    padding: 2em 2%;
+  }
+  .cabecalho-navegacao {
+    width: 75%;
+    display: block;
+  }
+  .botao-doar {
+    font-weight: 650;
+    font-size: 1em;
+    padding: 0.5em 1.3em;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+@media (min-width: 1141px) {
+  .cabecalho {
+    padding: 2em 2%;
+  }
+  .cabecalho-navegacao {
+    width: 65%;
+    display: block;
+  }
+  .botao-doar {
+    font-weight: 650;
+    font-size: 1em;
+    padding: 0.5em 1.3em;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+  }
+  .hamburger {
+    display: none;
+  }
 }
