@@ -17,7 +17,7 @@
 }
 
 .logo-TEMS {
-  width: 4em;
+  width: 10em;
 }
 
 .menu {
@@ -109,7 +109,7 @@
     padding: 2em 2%;
   }
   .cabecalho-navegacao {
-    width: 75%;
+    width: 65%;
     display: block;
   }
   .botao-doar {
@@ -125,6 +125,11 @@
   }
 }
 @media (min-width: 1141px) {
+
+  .logo-TEMS{
+    width: 12em;
+  }
+
   .cabecalho {
     padding: 2em 2%;
   }
@@ -135,8 +140,8 @@
   .botao-doar {
     font-weight: 650;
     font-size: 1em;
-    padding: 0.5em 1.3em;
-    border-radius: 20px;
+    padding: 1em 1.5em;
+    border-radius: 25px;
     width: auto;
     height: auto;
   }
