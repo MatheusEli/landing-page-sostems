@@ -74,8 +74,12 @@
 .img-atendimentos-espirituais {
     width: 80%;
     margin: 0 auto;
+    display: block;
 }
 
+.maos {
+    width: 100%;
+}
 .texto-atendimentos-espirituais {
     font-size: 17px;
     line-height: 20px;
@@ -84,4 +88,49 @@
 .botao-quero-doar {
     display: block;
     margin: 0 auto;
+}
+
+.titulo-numeros {
+    margin-top: 2em;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 650;
+    text-align: center;
+    color: #757575;
+}
+
+.bloco-numeros {
+    margin: 2em 0;
+    box-shadow: 0px 0px 15px 0px #dcdcdc;
+    border-radius: 25px;
+    width: 90%;
+}
+
+.numeros-linha {
+    margin: 2em 0;
+}
+
+.numeros-linha:nth-child(2){
+    padding: 1em 0;
+    border-top: 1.5px solid #dcdcdc;
+    border-bottom: 1.5px solid #dcdcdc;
+}
+
+.numeros {
+    font-size: 35px;
+    font-weight: 600;
+    color: goldenrod;
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+
+.numeros-texto {
+    color: #757575;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+@media (max-width: 1018px) and (min-width: 768px) {
+
 }
