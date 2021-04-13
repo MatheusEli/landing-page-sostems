@@ -10,7 +10,7 @@
     font-family: "Signature";
     color: goldenrod;
     text-align: center;
-    font-size: 55px;
+    font-size: 45px;
 }
 
 .titulo-atendimentos-espirituais {
@@ -18,7 +18,6 @@
     text-align: center;
     font-weight: 600;
     font-size: 40px;
-    margin-top: -10px;
 }
 
 .texto-atendimentos-espirituais {
@@ -110,7 +109,7 @@
     margin: 2em 0;
 }
 
-.numeros-linha:nth-child(2){
+.numeros-linha:nth-child(2) {
     padding: 1em 0;
     border-top: 1.5px solid #dcdcdc;
     border-bottom: 1.5px solid #dcdcdc;
@@ -130,7 +129,360 @@
     text-align: center;
 }
 
-
 @media (max-width: 1018px) and (min-width: 768px) {
+    .bloco-atendimentos-espirituais {
+        margin: 4em auto;
+    }
 
+    .subtitulo-atendimentos-espirituais {
+        text-align: left;
+    }
+
+    .titulo-atendimentos-espirituais {
+        text-align: left;
+        line-height: 45px;
+    }
+
+    .texto-atendimentos-espirituais {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .video-atendimentos-espirituais {
+        margin-top: 4em;
+        max-width: 800px;
+        display: block;
+    }
+    .bloco-1,
+    .bloco-2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .bloco-1-texto {
+        order: 2;
+    }
+    .img-atendimentos-espirituais {
+        width: 50%;
+        height: 50%;
+        margin: 0;
+    }
+    .maos {
+        order: 1;
+    }
+
+    .bloco-2-texto {
+        text-align: right;
+        width: 50%;
+    }
+
+    .mapa {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .bloco-numeros {
+        width: 70%;
+    }
+
+    .titulo-numeros {
+        font-size: 25px;
+    }
+
+    .botao-quero-doar {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+    }
 }
+
+@media (max-width: 1140px) and (min-width: 1019px) {
+    .bloco-atendimentos-espirituais {
+        margin: 9em auto;
+    }
+
+    .subtitulo-atendimentos-espirituais {
+        font-size: 55px;
+        text-align: left;
+    }
+
+    .titulo-atendimentos-espirituais {
+        text-align: left;
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .texto-atendimentos-espirituais {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .video-atendimentos-espirituais {
+        margin-top: 4em;
+        max-width: 800px;
+        display: block;
+    }
+    .bloco-1,
+    .bloco-2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .bloco-1-texto {
+        order: 2;
+    }
+    .img-atendimentos-espirituais {
+        width: 50%;
+        height: 50%;
+        margin: 0;
+    }
+    .maos {
+        order: 1;
+    }
+
+    .bloco-2-texto {
+        text-align: right;
+        width: 50%;
+    }
+
+    .mapa {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .bloco-numeros {
+        height: 8em;
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .titulo-numeros {
+        font-size: 25px;
+    }
+
+    .numeros-linha:nth-child(2) {
+        padding: 0 1.8em;
+        border-top: none;
+        border-bottom: none;
+        border-right: 1px solid #dcdcdc;
+        border-left: 1px solid #dcdcdc;
+    }
+
+    .numeros-linha {
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1em;
+    }
+
+    .botao-quero-doar {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+
+@media (min-width: 1141px) {
+    .bloco-atendimentos-espirituais {
+        margin: 9em auto;
+    }
+
+    .subtitulo-atendimentos-espirituais {
+        font-size: 55px;
+        text-align: left;
+    }
+
+    .titulo-atendimentos-espirituais {
+        text-align: left;
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    .texto-atendimentos-espirituais {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .video-atendimentos-espirituais {
+        margin-top: 4em;
+        max-width: 800px;
+        display: block;
+    }
+    .bloco-1,
+    .bloco-2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .bloco-1-texto {
+        order: 2;
+    }
+    .img-atendimentos-espirituais {
+        width: 50%;
+        height: 50%;
+        margin: 0;
+    }
+    .maos {
+        order: 1;
+    }
+
+    .bloco-2-texto {
+        text-align: right;
+        width: 50%;
+    }
+
+    .mapa {
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    .bloco-numeros {
+        height: 8em;
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .numeros{
+        font-size: 45px;
+    }
+
+    .numeros-texto{
+        font-size: 18px;
+    }
+
+    .titulo-numeros {
+        font-size: 25px;
+    }
+
+    .numeros-linha:nth-child(2) {
+        padding: 0 1.8em;
+        border-top: none;
+        border-bottom: none;
+        border-right: 1px solid #dcdcdc;
+        border-left: 1px solid #dcdcdc;
+    }
+
+    .numeros-linha {
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1em;
+    }
+
+    .botao-quero-doar {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .bloco-atendimentos-espirituais {
+        margin: 9em auto;
+        width: 70%;
+    }
+
+    .subtitulo-atendimentos-espirituais {
+        font-size: 55px;
+        text-align: left;
+    }
+
+    .titulo-atendimentos-espirituais {
+        text-align: left;
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    .texto-atendimentos-espirituais {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .video-atendimentos-espirituais {
+        margin-top: 4em;
+        max-width: 800px;
+        display: block;
+    }
+    .bloco-1,
+    .bloco-2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .bloco-1-texto {
+        order: 2;
+    }
+    .img-atendimentos-espirituais {
+        width: 50%;
+        height: 50%;
+        margin: 0;
+    }
+    .maos {
+        order: 1;
+    }
+
+    .bloco-2-texto {
+        text-align: right;
+        width: 50%;
+    }
+
+    .mapa {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .bloco-numeros {
+        height: 8em;
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .numeros{
+        font-size: 45px;
+    }
+
+    .numeros-texto{
+        font-size: 18px;
+    }
+
+    .titulo-numeros {
+        font-size: 25px;
+    }
+
+    .numeros-linha:nth-child(2) {
+        padding: 0 1.8em;
+        border-top: none;
+        border-bottom: none;
+        border-right: 1px solid #dcdcdc;
+        border-left: 1px solid #dcdcdc;
+    }
+
+    .numeros-linha {
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1em;
+    }
+
+    .botao-quero-doar {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+

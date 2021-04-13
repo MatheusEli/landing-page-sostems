@@ -20,6 +20,7 @@
 .video-sobre-casa {
   margin: 0 auto;
   margin-top: 3em;
+  max-width: 800px;
 }
 
 .texto-sobre-casa {
@@ -96,7 +97,7 @@
 
 .titulo-personalizado {
   text-align: center;
-  font-size: 55px;
+  font-size: 45px;
 }
 
 .video-sobre-casa {
@@ -127,7 +128,7 @@
 }
 
 .titulo-21-anos {
-  font-size: 50px;
+  font-size: 45px;
   margin-top: 0.8em;
   line-height: 40px;
   text-align: left;
@@ -150,12 +151,9 @@
     padding: 4em 0;
   }
 
-  .titulo-principal {
-    font-size: 60px;
-  }
-
   .video-sobre-casa {
-    width: 100%;
+    max-width: 800px;
+    display: block;
   }
 
   .texto-sobre-casa {
@@ -201,7 +199,7 @@
   }
 
   .titulo-principal {
-    font-size: 60px;
+    font-size: 50px;
   }
   .texto-sobre-casa {
     margin-top: 2em;
