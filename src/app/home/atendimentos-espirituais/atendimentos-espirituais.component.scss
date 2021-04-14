@@ -10,19 +10,23 @@
     font-family: "Signature";
     color: goldenrod;
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .titulo-atendimentos-espirituais {
-    color: dodgerblue;
+    color: #4f8cd2;
     text-align: center;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .texto-atendimentos-espirituais {
     color: #757575;
     margin: 2em 0;
+}
+
+.video-atendimentos-espirituais {
+    margin-top: 3em;
 }
 
 .texto-personalizado {
@@ -45,7 +49,7 @@
     font-size: 1.2em;
     padding: 0.6em 2em;
     border-radius: 25px;
-    background-color: dodgerblue;
+    background-color: #4f8cd2;
     color: white;
     border-style: none;
     cursor: pointer;
@@ -58,7 +62,7 @@
 
 .botao-quero-doar:hover {
     background-color: white;
-    color: dodgerblue;
+    color: #4f8cd2;
 }
 
 .bloco-atendimentos-espirituais {
@@ -289,6 +293,7 @@
 
 @media (min-width: 1141px) {
     .bloco-atendimentos-espirituais {
+        width: 75%;
         margin: 9em auto;
     }
 
@@ -299,8 +304,8 @@
 
     .titulo-atendimentos-espirituais {
         text-align: left;
-        font-size: 55px;
-        line-height: 65px;
+        font-size: 50px;
+        line-height: 60px;
     }
 
     .texto-atendimentos-espirituais {
@@ -389,7 +394,7 @@
 @media (min-width: 1600px) {
     .bloco-atendimentos-espirituais {
         margin: 9em auto;
-        width: 70%;
+        width: 62%;
     }
 
     .subtitulo-atendimentos-espirituais {

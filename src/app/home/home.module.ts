@@ -6,9 +6,10 @@ import { HomeRoutingModule } from "./home-routing.module";
 import { SobreCampanhaComponent } from './sobre-campanha/sobre-campanha.component';
 import { SobreCasaComponent } from "./sobre-casa/sobre-casa.component";
 import { AtendimentosEspirituaisComponent } from "./atendimentos-espirituais/atendimentos-espirituais.component";
+import { AtendimentosSociaisComponent } from "./atendimentos-sociais/atendimentos-sociais.component";
 
 @NgModule({
-    declarations: [HomeComponent, SobreCampanhaComponent, SobreCasaComponent, AtendimentosEspirituaisComponent],
+    declarations: [HomeComponent, SobreCampanhaComponent, SobreCasaComponent, AtendimentosEspirituaisComponent, AtendimentosSociaisComponent],
     imports: [CommonModule, FormsModule, HomeRoutingModule]
 })
 export class HomeModule{}
