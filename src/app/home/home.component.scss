@@ -2,9 +2,92 @@
   font-family: "Montserrat";
 }
 
-.bloco-principal {
+.bloco-menu-principal {
   background-color: black;
   color: white;
+  background-image: url("/assets/capa2.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto 100%;
+}
+
+.bloco-principal {
+  background-color: rgba(1, 1, 1, 0.5);
+}
+
+.hamburger-inner::after,
+.hamburger-inner::before,
+.hamburger-inner {
+  background-color: white;
+}
+
+.cabecalho {
+  font-weight: 500;
+  background-color: rgba(1, 1, 1, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-TEMS {
+  width: 10em;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.menu-opcao {
+  font-size: 0.9em;
+}
+
+.menu-opcao-link {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.menu-opcao-link:hover {
+  color: gray;
+}
+
+.botao-doar {
+  background-color: dodgerblue;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao-doar:focus {
+  outline: none;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+.botao-doar:hover {
+  background-color: black;
+  color: dodgerblue;
+}
+
+.cabecalho {
+  padding: 1em 2%;
+}
+.cabecalho-navegacao {
+  width: 65%;
+  display: none;
+}
+.botao-doar {
+  font-weight: 650;
+  font-size: 0.9em;
+  width: 4.7em;
+  height: 4.5em;
+  border-radius: 100%;
 }
 
 .linha-cabecalho {
@@ -47,6 +130,32 @@
 }
 
 @media (max-width: 1018px) and (min-width: 768px) {
+  .cabecalho {
+    padding: 2em 2%;
+  }
+  .cabecalho-navegacao {
+    width: 100%;
+    display: block;
+  }
+  .hamburger {
+    display: none;
+  }
+  .logo-TEMS {
+    display: none;
+  }
+  .botao-doar {
+    font-weight: 650;
+    font-size: 1em;
+    padding: 0.5em 1.3em;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+  }
+
+  .botao-doar {
+    display: none;
+  }
+
   .bloco-textos {
     width: 70%;
     margin-left: auto;
@@ -75,6 +184,25 @@
 }
 
 @media (max-width: 1140px) and (min-width: 1019px) {
+  .cabecalho {
+    padding: 2em 2%;
+  }
+  .cabecalho-navegacao {
+    width: 65%;
+    display: block;
+  }
+  .botao-doar {
+    font-weight: 650;
+    font-size: 1em;
+    padding: 0.5em 1.3em;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+  }
+  .hamburger {
+    display: none;
+  }
+
   .bloco-textos {
     width: 60%;
     margin-left: auto;
@@ -103,6 +231,37 @@
 }
 
 @media (min-width: 1141px) {
+  .bloco-menu-principal {
+    background-size: 135%;
+  }
+
+  .bloco-principal {
+    background: linear-gradient(to right, transparent 0%, black 100%);
+  }
+
+  .logo-TEMS {
+    width: 12em;
+  }
+
+  .cabecalho {
+    padding: 2em 2%;
+  }
+  .cabecalho-navegacao {
+    width: 65%;
+    display: block;
+  }
+  .botao-doar {
+    font-weight: 650;
+    font-size: 1em;
+    padding: 1em 1.5em;
+    border-radius: 25px;
+    width: auto;
+    height: auto;
+  }
+  .hamburger {
+    display: none;
+  }
+
   .bloco-textos {
     width: 60%;
     margin-left: auto;
@@ -131,6 +290,14 @@
 }
 
 @media (min-width: 1600px) {
+  .bloco-menu-principal {
+    background-size: 125%;
+  }
+
+  .bloco-principal {
+    background: linear-gradient(to right, transparent 0%, black 100%);
+  }
+
   .bloco-textos {
     width: 60%;
     margin-left: auto;

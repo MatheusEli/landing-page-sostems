@@ -46,13 +46,14 @@
   margin: 0 .5em;
 }
 
-.numeros {
+.titulo-numeros {
   font-size: 25px;
   line-height: 30px;
   font-weight: 600;
   color: goldenrod;
   text-align: center;
   padding: 1em 0;
+  padding-top: 2em;
 }
 
 .numeros-texto {
@@ -70,7 +71,6 @@
 .video-atendimentos-sociais {
   margin: 0 auto;
   margin-top: 3em;
-  max-width: 800px;
 }
 
 
@@ -174,6 +174,7 @@
   align-items: center;
 }
 
+
 .numeros-linha-sacolinha {
   margin: 1em auto;
   display: flex;
@@ -211,8 +212,15 @@
     padding: 4em 0;
   }
 
+  .slide-cestas{
+    order: 1;
+  }
+  
+  .texto-cestas{
+    order: 2;
+  }
+
   .video-atendimentos-sociais {
-    max-width: 800px;
     display: block;
   }
 
@@ -229,12 +237,54 @@
     font-size: 20px;
     line-height: 25px;
     width: 55%;
+    margin-bottom: 0;
   }
 
   .titulo-cestas-sacolinhas {
     margin-bottom: 0.7em;
   }
 
+  .titulo-numeros{
+    padding: 0 1em;
+    font-size: 28px;
+    width: 80%;
+    text-align: left;
+  }
+
+  .bloco-numeros{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .bloco-numeros-texto{
+    width: 120%;
+  }
+
+  .numeros-linha{
+    margin: 1em auto;
+    padding: .3em 0;
+  }
+
+  .bloco-numeros-sacolinha-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .numeros-linha-sacolinha{
+    width: 33%;
+  }
+
+  .numeros-linha-sacolinha:nth-child(2) .numeros-sacolinha{
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+  }
+
+  .botao-ajude-agora{
+    width: 75%;
+  }
 }
 
 @media (max-width: 1140px) and (min-width: 1019px) {
@@ -245,9 +295,18 @@
   .titulo-principal {
     font-size: 50px;
   }
+
+  .slide-cestas{
+    order: 1;
+  }
+  
+  .texto-cestas{
+    order: 2;
+  }
+
   .bloco-atendimentos-sociais-cestas-sacolinhas {
     flex-direction: row;
-    margin: 7em 0;
+    margin: 4em 0;
   }
 
   .slide {
@@ -257,7 +316,7 @@
   .bloco-texto-cestas-sacolinhas {
     font-size: 20px;
     line-height: 25px;
-    width: 60%;
+    width: 55%;
     margin-left: 0.9em;
   }
 
@@ -267,7 +326,6 @@
   }
 
   .video-atendimentos-sociais {
-    width: 800px;
     display: block;
   }
 
@@ -276,6 +334,55 @@
     text-align: left;
   }
 
+  .titulo-numeros{
+    padding: 0 1em;
+    font-size: 28px;
+    width: 80%;
+    text-align: left;
+  }
+
+  .bloco-numeros{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .bloco-numeros-texto{
+    width: 90%;
+  }
+
+  .numeros-linha{
+    margin: 1em auto;
+    padding: .3em 0;
+  }
+
+  .bloco-numeros-sacolinha-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .numeros-linha-sacolinha{
+    width: 100%;
+  }
+
+  .numeros-linha-sacolinha:nth-child(2) .numeros-sacolinha{
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+  }
+
+  .bloco-numeros-sacolinha{
+    margin-bottom: 5em;
+    padding: 1em 0;
+    border-radius: 35px;
+  }
+  .bloco-numeros-sacolinha-div{
+    width: 80%;
+  }
+  .botao-ajude-agora{
+    width: 75%;
+  }
 }
 
 @media (min-width: 1141px) {
@@ -287,9 +394,18 @@
   .titulo-principal {
     font-size: 50px;
   }
+
+  .slide-cestas{
+    order: 1;
+  }
+  
+  .texto-cestas{
+    order: 2;
+  }
+
   .bloco-atendimentos-sociais-cestas-sacolinhas {
     flex-direction: row;
-    margin: 7em 0;
+    margin: 4em 0;
   }
 
   .slide {
@@ -299,7 +415,7 @@
   .bloco-texto-cestas-sacolinhas {
     font-size: 20px;
     line-height: 25px;
-    width: 70%;
+    width: 55%;
     margin-left: 1em;
   }
 
@@ -309,13 +425,71 @@
   }
 
   .video-atendimentos-sociais {
-    width: 800px;
     display: block;
   }
 
   .titulo-cestas-sacolinhas {
     margin-bottom: 0.7em;
     text-align: left;
+  }
+
+  .titulo-numeros{
+    padding: 0 1em;
+    font-size: 28px;
+    width: 80%;
+    text-align: left;
+  }
+
+  .bloco-numeros{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .bloco-numeros-texto{
+    width: 90%;
+  }
+
+  .numeros-linha{
+    margin: 1em auto;
+    padding: .3em 0;
+  }
+
+  .bloco-numeros-sacolinha-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .numeros-linha-sacolinha{
+    width: 100%;
+  }
+
+  .numeros-linha-sacolinha:nth-child(2) .numeros-sacolinha{
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+  }
+
+  .bloco-numeros-sacolinha{
+    margin-bottom: 4em;
+    padding: 1em 0;
+    border-radius: 35px;
+  }
+
+  .numeros-sacolinha{
+    font-size: 35px;
+    margin-bottom: .2em;
+  }
+
+  .numeros-linha-sacolinha{
+    margin: .2em auto;
+  }
+  .bloco-numeros-sacolinha-div{
+    width: 85%;
+  }
+  .botao-ajude-agora{
+    width: 75%;
   }
 
 }
@@ -325,6 +499,15 @@
     width: 62%;
     padding: 9em 0;
   }
+
+  .slide-cestas{
+    order: 1;
+  }
+  
+  .texto-cestas{
+    order: 2;
+  }
+
   .bloco-atendimentos-sociais-cestas-sacolinhas {
     flex-direction: row;
     margin: 7em 0;
@@ -341,12 +524,62 @@
   }
 
   .video-atendimentos-sociais {
-    width: 800px;
     display: block;
   }
 
   .titulo-cestas-sacolinhas {
     margin-bottom: 0.7em;
+  }
+
+  .titulo-numeros{
+    padding: 0 1em;
+    font-size: 28px;
+    width: 80%;
+    text-align: left;
+  }
+
+  .bloco-numeros{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .bloco-numeros-texto{
+    width: 90%;
+  }
+
+  .numeros-linha{
+    margin: 1em auto;
+    padding: .3em 0;
+  }
+
+  .bloco-numeros-sacolinha-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .numeros-linha-sacolinha{
+    width: 100%;
+  }
+
+  .numeros-linha-sacolinha:nth-child(2) .numeros-sacolinha{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 650;
+    margin: 0 auto;
+  }
+
+  .bloco-numeros-sacolinha{
+    margin-bottom: 5em;
+    padding: 1.5em 0;
+    border-radius: 35px;
+  }
+  .bloco-numeros-sacolinha-div{
+    width: 80%;
+  }
+  .botao-ajude-agora{
+    width: 75%;
   }
 
 }
