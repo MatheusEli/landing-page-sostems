@@ -48,6 +48,7 @@
   color: white;
   text-decoration: none;
   transition: 0.2s;
+  font-weight: 600;
 }
 
 .menu-opcao-link:hover {
@@ -55,7 +56,7 @@
 }
 
 .botao-doar {
-  background-color: dodgerblue;
+  background-color: #3685df;
   color: white;
   border-style: none;
   cursor: pointer;
@@ -71,7 +72,7 @@
 }
 .botao-doar:hover {
   background-color: black;
-  color: dodgerblue;
+  color: #3685df;
 }
 
 .cabecalho {
@@ -96,7 +97,7 @@
 
 .titulo-personalizado {
   font-family: "Signature";
-  color: #daa520;
+  color: #ff7e00;
 }
 
 .subtitulo-principal {
@@ -235,7 +236,8 @@
   }
 
   .bloco-principal {
-    background: linear-gradient(to right, transparent 0%, black 100%);
+    background: transparent;
+    //background: linear-gradient(to right, transparent 0%, black 100%);
   }
 
   .logo-TEMS {
@@ -294,7 +296,8 @@
   }
 
   .bloco-principal {
-    background: linear-gradient(to right, transparent 0%, black 100%);
+    background: transparent;
+    //background: linear-gradient(to right, transparent 0%, black 100%);
   }
 
   .bloco-textos {

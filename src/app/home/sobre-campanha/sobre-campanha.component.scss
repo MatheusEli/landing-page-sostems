@@ -15,7 +15,7 @@
 }
 
 .texto-personalizado {
-  color: #4f8cd2;
+  color: #3685df;
   font-weight: 600;
 }
 
@@ -34,7 +34,7 @@
   font-size: 1.2em;
   padding: 0.6em 2em;
   border-radius: 25px;
-  background-color: #4f8cd2;
+  background-color: #3685df;
   color: white;
   border-style: none;
   cursor: pointer;
@@ -47,7 +47,7 @@
 
 .botao-ajude-agora:hover {
   background-color: white;
-  color: #4f8cd2;
+  color: #3685df;
 }
 
 .bloco-sobre-campanha {
@@ -139,14 +139,14 @@
 
 @media (min-width: 1141px) {
   .bloco-sobre-campanha {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     flex-direction: row;
     margin: 9em auto;
   }
 
   .logo-sostems {
-    width: 32%;
+    width: 48%;
   }
 
   .texto-sobre-campanha {
@@ -154,8 +154,17 @@
     line-height: 25px;
   }
 
+  .texto-personalizado {
+    font-size: 23px;
+  }
+
   .img-despesa {
     width: 4.5em;
+  }
+
+  .botao-ajude-agora {
+    margin: 0;
+    font-size: 1.5em;
   }
 }
 
