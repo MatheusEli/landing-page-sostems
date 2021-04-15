@@ -8,13 +8,13 @@
 
 .subtitulo-atendimentos-espirituais {
     font-family: "Signature";
-    color: goldenrod;
+    color: #ff7e00;
     text-align: center;
     font-size: 40px;
 }
 
 .titulo-atendimentos-espirituais {
-    color: #4f8cd2;
+    color: #3685df;
     text-align: center;
     font-weight: 600;
     font-size: 30px;
@@ -30,7 +30,7 @@
 }
 
 .texto-personalizado {
-    color: #4f8cd2;
+    color: #3685df;
     font-weight: 600;
 }
 
@@ -49,7 +49,7 @@
     font-size: 1.2em;
     padding: 0.6em 2em;
     border-radius: 25px;
-    background-color: #4f8cd2;
+    background-color: #3685df;
     color: white;
     border-style: none;
     cursor: pointer;
@@ -62,7 +62,7 @@
 
 .botao-quero-doar:hover {
     background-color: white;
-    color: #4f8cd2;
+    color: #3685df;
 }
 
 .bloco-atendimentos-espirituais {
@@ -122,7 +122,7 @@
 .numeros {
     font-size: 35px;
     font-weight: 600;
-    color: goldenrod;
+    color: #ff7e00;
     text-align: center;
     margin-bottom: 0.3em;
 }
@@ -291,19 +291,19 @@
 
 @media (min-width: 1141px) {
     .bloco-atendimentos-espirituais {
-        width: 75%;
+        width: 80%;
         margin: 9em auto;
     }
 
     .subtitulo-atendimentos-espirituais {
-        font-size: 55px;
+        font-size: 60px;
         text-align: left;
     }
 
     .titulo-atendimentos-espirituais {
         text-align: left;
-        font-size: 50px;
-        line-height: 60px;
+        font-size: 55px;
+        line-height: 65px;
     }
 
     .texto-atendimentos-espirituais {
@@ -327,9 +327,14 @@
     .bloco-1-texto {
         order: 2;
     }
+
+    .bloco-2 {
+        margin-top: 3em;
+    }
+
     .img-atendimentos-espirituais {
-        width: 50%;
-        height: 50%;
+        width: 55%;
+        height: 55%;
         margin: 0;
     }
     .maos {
@@ -339,6 +344,7 @@
     .bloco-2-texto {
         text-align: right;
         width: 50%;
+        margin-left: 5%;
     }
 
     .mapa {
@@ -354,11 +360,11 @@
         align-items: flex-end;
     }
 
-    .numeros{
+    .numeros {
         font-size: 45px;
     }
 
-    .numeros-texto{
+    .numeros-texto {
         font-size: 18px;
     }
 
@@ -456,11 +462,11 @@
         align-items: flex-end;
     }
 
-    .numeros{
+    .numeros {
         font-size: 45px;
     }
 
-    .numeros-texto{
+    .numeros-texto {
         font-size: 18px;
     }
 
@@ -492,4 +498,3 @@
         width: 100%;
     }
 }
-

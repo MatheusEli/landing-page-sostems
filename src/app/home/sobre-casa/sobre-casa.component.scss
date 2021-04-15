@@ -8,11 +8,11 @@
 
 .titulo-personalizado {
   font-family: "Signature";
-  color: goldenrod;
+  color: #ff7e00;
 }
 
 .titulo-principal {
-  color: #4f8cd2;
+  color: #3685df;
   text-align: center;
   font-weight: 600;
 }
@@ -67,7 +67,7 @@
   margin: 0 auto;
   margin-top: 3em;
   border-radius: 25px;
-  background-color: #e37f1e;
+  background-color: #ff7e00;
   color: white;
   border-style: none;
   cursor: pointer;
@@ -80,7 +80,7 @@
 
 .botao-ajude-agora:hover {
   background-color: #fdfaf7;
-  color: #e37f1e;
+  color: #ff7e00;
 }
 
 .bloco-sobre-casa {
@@ -250,12 +250,12 @@
 
 @media (min-width: 1141px) {
   .bloco-sobre-casa {
-    width: 75%;
+    width: 80%;
     padding: 9em 0;
   }
 
   .titulo-principal {
-    font-size: 50px;
+    font-size: 55px;
   }
   .texto-sobre-casa {
     font-size: 20px;
@@ -263,11 +263,12 @@
   }
   .bloco-sobre-casa-21-anos {
     flex-direction: row;
-    margin: 7em 0;
+    margin: 7.5em 0;
+    margin-bottom: 10em;
   }
 
   .slide {
-    width: 40%;
+    width: 45%;
   }
 
   .bloco-texto-21-anos {
@@ -279,7 +280,7 @@
 
   .titulo-personalizado {
     text-align: center;
-    font-size: 55px;
+    font-size: 60px;
   }
 
   .video-sobre-casa {
@@ -303,6 +304,10 @@
     line-height: 25px;
     margin-top: 3em;
     text-align: center;
+  }
+
+  .botao-ajude-agora{
+    font-size: 1.5em;
   }
 }
 
