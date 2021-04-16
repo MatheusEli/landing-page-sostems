@@ -405,10 +405,10 @@
 
   .bloco-atendimentos-sociais-cestas-sacolinhas {
     flex-direction: row;
-    margin: 7em 0;
+    margin-top: 7em;
   }
 
-  .bloco-atendimentos-sociais-cestas-sacolinhas:first-of-type{
+  .bloco-atendimentos-sociais-cestas-sacolinhas{
     margin-bottom: 4em;
   }
 
@@ -464,7 +464,7 @@
     padding: 1em;
     padding-bottom: 1.2em;
     border-radius: 50px;
-    margin-bottom: 0;
+    margin-bottom: 10em;
   }
 
   .bloco-numeros-texto{
@@ -559,21 +559,36 @@
 
   .bloco-atendimentos-sociais-cestas-sacolinhas {
     flex-direction: row;
-    margin: 4em 0;
+    margin-top: 7em;
   }
 
-  .bloco-atendimentos-sociais-cestas-sacolinhas:first-of-type{
-    margin-top: 5em;
+  .bloco-atendimentos-sociais-cestas-sacolinhas{
+    margin-bottom: 4em;
   }
 
   .slide {
-    width: 40%;
+    width: 45%;
   }
 
   .bloco-texto-cestas-sacolinhas {
     font-size: 20px;
     line-height: 25px;
     width: 55%;
+  }
+
+  .bloco-texto-cestas-sacolinhas{
+    margin-left: 0;
+    margin-right: 2em;
+  }
+
+  .bloco-atendimentos-sociais-cestas-sacolinhas:first-of-type .bloco-texto-cestas-sacolinhas{
+    margin-left: 2em;
+    margin-right: 0;
+  }
+
+  .titulo-personalizado {
+    text-align: center;
+    font-size: 60px;
   }
 
   .video-atendimentos-sociais {
@@ -585,7 +600,7 @@
 
   .titulo-cestas-sacolinhas {
     margin-bottom: 0.7em;
-    font-size: 28px;
+    text-align: left;
   }
 
   .titulo-numeros{
@@ -596,10 +611,6 @@
     text-align: left;
   }
 
-  .numeros-personalizado{
-    font-size: 28px;
-  }
-
   .bloco-numeros{
     display: flex;
     align-items: center;
@@ -607,10 +618,11 @@
     padding: 1em;
     padding-bottom: 1.2em;
     border-radius: 50px;
+    margin-bottom: 10em;
   }
 
   .bloco-numeros-texto{
-    width: fit-content;
+    width: 90%;
   }
 
   .numeros-linha{
@@ -620,6 +632,22 @@
     border-radius: 22px;
   }
 
+  .numeros-personalizado{
+    font-size: 28px;
+  }
+
+  .bloco-numeros-texto{
+    width: fit-content;
+    margin-right: 1em;
+  }
+
+  .numeros-linha-img{
+    width: 15%;
+  }
+
+  .numeros-texto{
+    font-size: 17px;
+  }
 
   .bloco-numeros-sacolinha-div{
     display: flex;
@@ -646,18 +674,20 @@
     padding: 1em 0;
     border-radius: 35px;
   }
-  .numeros-linha-img{
-    width: 15%;
+
+  .numeros-sacolinha{
+    font-size: 35px;
+    margin-bottom: .2em;
   }
 
-  .numeros-texto{
-    font-size: 17px;
+  .numeros-linha-sacolinha{
+    margin: .2em auto;
   }
   .bloco-numeros-sacolinha-div{
-    width: 80%;
+    width: 100%;
   }
   .botao-ajude-agora{
+    font-size: 1.5em;
     width: 75%;
   }
-
 }

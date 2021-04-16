@@ -7,9 +7,10 @@ import { SobreCampanhaComponent } from './sobre-campanha/sobre-campanha.componen
 import { SobreCasaComponent } from "./sobre-casa/sobre-casa.component";
 import { AtendimentosEspirituaisComponent } from "./atendimentos-espirituais/atendimentos-espirituais.component";
 import { AtendimentosSociaisComponent } from "./atendimentos-sociais/atendimentos-sociais.component";
+import { TransmissoesComponent } from "./transmissoes/transmissoes.component";
 
 @NgModule({
-    declarations: [HomeComponent, SobreCampanhaComponent, SobreCasaComponent, AtendimentosEspirituaisComponent, AtendimentosSociaisComponent],
+    declarations: [HomeComponent, SobreCampanhaComponent, SobreCasaComponent, AtendimentosEspirituaisComponent, AtendimentosSociaisComponent, TransmissoesComponent],
     imports: [CommonModule, FormsModule, HomeRoutingModule]
 })
 export class HomeModule{}
