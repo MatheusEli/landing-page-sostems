@@ -9,9 +9,10 @@ import { AtendimentosEspirituaisComponent } from "./atendimentos-espirituais/ate
 import { AtendimentosSociaisComponent } from "./atendimentos-sociais/atendimentos-sociais.component";
 import { TransmissoesComponent } from "./transmissoes/transmissoes.component";
 import { ImportanciaDoacaoComponent } from "./importancia-doacao/importancia-doacao.component";
+import { FormasAjudarComponent } from "./formas-ajudar/formas-ajudar.component";
 
 @NgModule({
-    declarations: [HomeComponent, SobreCampanhaComponent, SobreCasaComponent, AtendimentosEspirituaisComponent, AtendimentosSociaisComponent, TransmissoesComponent, ImportanciaDoacaoComponent],
+    declarations: [HomeComponent, SobreCampanhaComponent, SobreCasaComponent, AtendimentosEspirituaisComponent, AtendimentosSociaisComponent, TransmissoesComponent, ImportanciaDoacaoComponent, FormasAjudarComponent],
     imports: [CommonModule, FormsModule, HomeRoutingModule]
 })
 export class HomeModule{}
