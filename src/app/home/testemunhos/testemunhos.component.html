@@ -1,0 +1,91 @@
+<section class="container-testemunhos">
+    <div class="bloco-testemunhos">
+        <h4 class="titulo-personalizado">Testemunhos</h4>
+        <h1 class="titulo-principal">Como a Casa de Maria já te ajudou?</h1>
+
+        <p class="texto-testemunhos">
+            Deixe para nós o seu depoimento e expresse a sua gratidão!
+            <br><br>
+            Você pode deixar um depoimento escrito no tamanho que quiser ou enviar um vídeo de até 2 minutos, que
+            poderão ser exibidos em nossas lives. Escolha a forma que mais lhe agradar para enviar!
+        </p>
+
+        <div class = "container-formulario">
+            <form #form="ngForm" [formGroup]="depoimentoForm" class="formulario" (submit)="enviar()">
+                <h4 class="titulo-cestas-sacolinhas">
+                   Depoimento em texto
+                </h4>
+
+                <div class="form-control">
+                    <input formControlName="fullName" placeholder="Nome completo" class="form-input" />
+                </div>
+                <div class="form-control email">
+                    <input #emailInput formControlName="email" placeholder="E-mail" class="form-input" autofocus />
+                </div>
+                <div class="form-control celular">
+                    <input formControlName="celular" placeholder="Celular" class="form-input" />
+                </div>
+                <div class="form-control pais">
+                    <input formControlName="pais" placeholder="País" class="form-input" />
+                </div>
+                <div class="form-control uf">
+                    <input formControlName="UF" placeholder="UF" class="form-input" />
+                </div>
+                <div class="form-control cidade">
+                    <input formControlName="cidade" placeholder="Cidade" class="form-input" />
+                </div>
+                <div class="form-control">
+                    <textarea type="textarea" formControlName="depoimento" placeholder="Depoimento"
+                        class="form-input txtarea"></textarea>
+                </div>
+
+
+                <div class="form-control">
+                    <input type="checkbox" id="LGPD" name="LGPD" value="LGPD" />
+                    <label for="LGPD" style="font-size: 13px; color: #757575">Eu autorizo o uso dos meus dados pelo
+                        TEMS</label>
+                </div>
+
+                <button class="botao-quero-doar" type="submit">ENVIAR DEPOIMENTO</button>
+            </form>
+
+            <form #form="ngForm" [formGroup]="depoimentoForm" class="formulario" (submit)="enviar()">
+                <h4 class="titulo-cestas-sacolinhas">
+                    Depoimento em vídeo
+                </h4>
+
+                <div class="form-control">
+                    <input formControlName="fullName" placeholder="Nome completo" class="form-input" />
+                </div>
+                <div class="form-control email">
+                    <input #emailInput formControlName="email" placeholder="E-mail" class="form-input" autofocus />
+                </div>
+                <div class="form-control celular">
+                    <input formControlName="celular" placeholder="Celular" class="form-input" />
+                </div>
+                <div class="form-control pais">
+                    <input formControlName="pais" placeholder="País" class="form-input" />
+                </div>
+                <div class="form-control uf">
+                    <input formControlName="UF" placeholder="UF" class="form-input" />
+                </div>
+                <div class="form-control cidade">
+                    <input formControlName="cidade" placeholder="Cidade" class="form-input" />
+                </div>
+                <div class="form-control">
+                    <textarea type="textarea" formControlName="depoimento" placeholder="Depoimento"
+                        class="form-input txtarea"></textarea>
+                </div>
+
+
+                <div class="form-control">
+                    <input class = "lgpd" type="checkbox" id="LGPD" name="LGPD" value="LGPD" />
+                    <label for="LGPD" style="font-size: 13px; color: #757575">Eu autorizo o uso dos meus dados pelo
+                        TEMS</label>
+                </div>
+
+                <button class="botao-quero-doar" type="submit">ENVIAR DEPOIMENTO</button>
+            </form>
+        </div>
+    </div>
+</section>
