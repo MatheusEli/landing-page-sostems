@@ -72,10 +72,15 @@
                 <div class="form-control cidade">
                     <input formControlName="cidade" placeholder="Cidade" class="form-input" />
                 </div>
-                <div class="form-control">
-                    <textarea type="textarea" formControlName="depoimento" placeholder="Depoimento"
-                        class="form-input txtarea"></textarea>
+
+                <div class="form-group file-area">
+                    <label for="images" class = "input-label"><span class = "depoimento-titulo">Depoimento</span><br>Formato: mp4<br>Tamanho: máx. de 250 mb<br>Tempo limite: 2 min</label>
+                <input type="file" name="images" id="images" required="required" multiple="multiple"/>
+                <div class="file-dummy">
+                  <div class="success">Great, your files are selected. Keep on.</div>
+                  <div class="default">CARREGAR VÍDEO</div>
                 </div>
+              </div>
 
 
                 <div class="form-control">

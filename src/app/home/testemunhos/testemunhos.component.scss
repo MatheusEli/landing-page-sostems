@@ -1,93 +1,318 @@
 * {
-    font-family: "Montserrat";
+  font-family: "Montserrat";
+}
+
+.titulo-personalizado {
+  font-family: "Signature";
+  color: #ff7e00;
+}
+
+.titulo-principal {
+  color: #3685df;
+  text-align: center;
+  font-weight: 600;
+}
+
+.video-testemunhos {
+  margin: 0 auto;
+  margin-top: 3em;
+}
+
+.texto-testemunhos {
+  color: #757575;
+}
+
+.bolder {
+  font-weight: 600;
+}
+
+.slide {
+  border-radius: 25px;
+}
+
+.botao-ajude-agora {
+  font-weight: 650;
+  font-size: 1.2em;
+  padding: 0.6em 2em;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3em;
+  border-radius: 25px;
+  background-color: #ff7e00;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao-ajude-agora:focus {
+  outline: none;
+}
+
+.botao-ajude-agora:hover {
+  background-color: #fdfaf7;
+  color: #ff7e00;
+}
+
+.bloco-testemunhos {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5em 0;
+}
+
+.titulo-principal {
+  font-size: 30px;
+  margin-top: -10px;
+}
+
+.titulo-personalizado {
+  text-align: center;
+  font-size: 40px;
+}
+
+.texto-testemunhos {
+  margin-top: 2em;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.slide {
+  width: 100%;
+}
+
+.formulario {
+  width: 90%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px 0px #dcdcdc;
+  background-color: white;
+  padding: 1em;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.titulo-cestas-sacolinhas {
+  font-size: 22px;
+  color: #757575;
+  margin-top: 0.8em;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: left;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.form-control {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-input {
+  width: 93%;
+  margin: 1em 0;
+  outline: none;
+  border-style: none;
+  padding: 1em;
+  background-color: #f8f8f8;
+  border-radius: 25px;
+}
+
+.txtarea {
+  height: 10em;
+}
+.botao-quero-doar {
+  font-weight: 650;
+  font-size: 1em;
+  padding: 0.6em 2em;
+  border-radius: 15px;
+  background-color: #3685df;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.botao-quero-doar:focus {
+  outline: none;
+}
+
+.botao-quero-doar:hover {
+  background-color: white;
+  color: #3685df;
+}
+
+//------- FILE INPUT -------//
+.file-area {
+  width: 93%;
+  position: relative;
+  background-color: #f8f8f8;
+  border-radius: 25px;
+  margin: 1em 0;
+  padding: 1.5em 1em;
+  padding-bottom: 0;
+
+  input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 93%;
+    margin: 0 auto;
+  }
+
+  input[type = "file"]:focus{
+    outline: none;
+  }
+
+  .input-label{
+    display: block;
+    text-align: left;
+    color: #757575;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .depoimento-titulo{
+    font-size: 16px;
+    font-weight: 600;
+    color: #757575;
+  }
+  .file-dummy {
+    width: 93%;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    font-weight: 600;
+    color: #757575;
+
+    .success {
+      display: none;
+    }
+
+    .default{
+      padding: 1em;
+      display: inline-block;
+      border-radius: 15px;
+      background-color: rgba(0, 0, 0, 0.2);
+      color: white;
+      font-weight: 600;
+    }
+  }
+
+  .file-dummy:focus{
+    outline: none;
+  }
+
+  &:hover .file-dummy {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  input[type="file"]:focus + .file-dummy {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+
+  input[type="file"]:valid + .file-dummy {
+    border-color: rgba(0, 255, 0, 0.4);
+    background-color: rgba(0, 255, 0, 0.3);
+
+    .success {
+      display: inline-block;
+    }
+    .default {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1018px) and (min-width: 768px) {
+  .bloco-testemunhos {
+    padding: 4em 0;
+  }
+
+  .texto-testemunhos {
+    margin-top: 2em;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .slide {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1140px) and (min-width: 1019px) {
+  .bloco-testemunhos {
+    padding: 9em 0;
+  }
+
+  .titulo-principal {
+    font-size: 50px;
+  }
+  .texto-testemunhos {
+    margin-top: 2em;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .slide {
+    width: 40%;
   }
 
   .titulo-personalizado {
-    font-family: "Signature";
-    color: #ff7e00;
-  }
-  
-  .titulo-principal {
-    color: #3685df;
     text-align: center;
-    font-weight: 600;
+    font-size: 55px;
   }
-  
+
   .video-testemunhos {
-    margin: 0 auto;
-    margin-top: 3em;
-  }
-  
-  .texto-testemunhos {
-    color: #757575;
-  }
-  
-  .bolder {
-    font-weight: 600;
-  }
-  
-  .slide {
-    border-radius: 25px;
-  }
-  
-  .botao-ajude-agora {
-    font-weight: 650;
-    font-size: 1.2em;
-    padding: 0.6em 2em;
+    width: 800px;
     display: block;
-    margin: 0 auto;
-    margin-top: 3em;
-    border-radius: 25px;
-    background-color: #ff7e00;
-    color: white;
-    border-style: none;
-    cursor: pointer;
-    transition: 0.3s;
   }
-  
-  .botao-ajude-agora:focus {
-    outline: none;
-  }
-  
-  .botao-ajude-agora:hover {
-    background-color: #fdfaf7;
-    color: #ff7e00;
-  }
-  
+}
+
+@media (min-width: 1141px) {
   .bloco-testemunhos {
-    width: 90%;
-    margin: 0 auto;
-    padding: 5em 0;
+    width: 80%;
+    padding: 9em 0;
   }
-  
+
   .titulo-principal {
-    font-size: 30px;
-    margin-top: -10px;
+    font-size: 55px;
   }
-  
+  .texto-testemunhos {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .slide {
+    width: 45%;
+  }
+
   .titulo-personalizado {
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
   }
-  
-  .texto-testemunhos {
-    margin-top: 2em;
-    font-size: 17px;
-    line-height: 20px;
+
+  .container-formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
-  
-  .slide {
-    width: 100%;
-  }
-  
-  .formulario{
-    width: 90%;
-    border-radius: 25px;
+  .formulario {
+    width: 44%;
+    border-radius: 35px;
     box-shadow: 0px 0px 15px 0px #dcdcdc;
     background-color: white;
-    padding: 1em;
+    padding: 1.5em;
     margin: 0 auto;
-    margin-top: 2em;
+    margin-top: 4em;
   }
 
   .titulo-cestas-sacolinhas {
@@ -100,222 +325,81 @@
     margin-bottom: 0.5em;
     text-align: center;
   }
-  
-  .form-control{
+
+  .form-control {
     width: 100%;
     margin: 0 auto;
   }
 
-  .form-input{
+  .form-input {
     width: 93%;
-    margin: 1em 0;
+    margin: 0.8em 0;
     outline: none;
     border-style: none;
-    padding: 1em;
-    background-color: #f8f8f8;
-    border-radius: 25px;
+    padding: 1.5em 1em;
+    border-radius: 15px;
   }
 
-  .txtarea{
+  .email {
+    width: 55%;
+    display: inline-block;
+  }
+
+  .celular {
+    width: 38%;
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+  .pais {
+    width: 20%;
+    display: inline-block;
+  }
+
+  .uf {
+    width: 10%;
+    display: inline-block;
+    margin: 0 2em;
+  }
+
+  .cidade {
+    width: 55%;
+    display: inline-block;
+  }
+
+  .txtarea {
     height: 10em;
   }
+
+  .titulo-cestas-sacolinhas {
+    text-align: left;
+  }
   .botao-quero-doar {
-    font-weight: 650;
-    font-size: 1em;
-    padding: 0.6em 2em;
-    border-radius: 15px;
-    background-color: #3685df;
-    color: white;
-    border-style: none;
-    cursor: pointer;
-    transition: 0.3s;
+    margin-top: 2em;
+    font-size: 1.5em;
+    border-radius: 25px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .bloco-testemunhos {
+    width: 62%;
+    padding: 9em 0;
+  }
+  .texto-testemunhos {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .slide {
+    width: 40%;
+  }
+
+  .video-testemunhos {
+    height: 30em;
+    object-fit: cover;
+    overflow: hidden;
     display: block;
-    margin: 0 auto;
-    margin-top: 1em;
+  }
+
 }
-
-.botao-quero-doar:focus {
-    outline: none;
-}
-
-.botao-quero-doar:hover {
-    background-color: white;
-    color: #3685df;
-}
-
-  @media (max-width: 1018px) and (min-width: 768px) {
-    .bloco-testemunhos {
-      padding: 4em 0;
-    }
-
-    .texto-testemunhos {
-      margin-top: 2em;
-      font-size: 20px;
-      line-height: 25px;
-    }
-  
-    .slide {
-      width: 40%;
-    }
-  }
-  
-  @media (max-width: 1140px) and (min-width: 1019px) {
-    .bloco-testemunhos {
-      padding: 9em 0;
-    }
-  
-    .titulo-principal {
-      font-size: 50px;
-    }
-    .texto-testemunhos {
-      margin-top: 2em;
-      font-size: 20px;
-      line-height: 25px;
-    }
-    .slide {
-      width: 40%;
-    }
-  
-    .titulo-personalizado {
-      text-align: center;
-      font-size: 55px;
-    }
-  
-    .video-testemunhos {
-      width: 800px;
-      display: block;
-    }
-  }
-  
-  @media (min-width: 1141px) {
-    .bloco-testemunhos {
-      width: 80%;
-      padding: 9em 0;
-    }
-  
-    .titulo-principal {
-      font-size: 55px;
-    }
-    .texto-testemunhos {
-      font-size: 20px;
-      line-height: 25px;
-      text-align: center;
-    }
-  
-    .slide {
-      width: 45%;
-    }
-  
-    .titulo-personalizado {
-      text-align: center;
-      font-size: 60px;
-    }
-
-    .container-formulario{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .formulario{
-      width: 44%;
-      border-radius: 35px;
-      box-shadow: 0px 0px 15px 0px #dcdcdc;
-      background-color: white;
-      padding: 1.5em;
-      margin: 0 auto;
-      margin-top: 4em;
-    }
-  
-    .titulo-cestas-sacolinhas {
-      font-size: 22px;
-      color: #757575;
-      margin-top: 0.8em;
-      font-weight: 600;
-      line-height: 40px;
-      text-align: left;
-      margin-bottom: 0.5em;
-      text-align: center;
-    }
-    
-    .form-control{
-      width: 100%;
-      margin: 0 auto;
-    }
-  
-    .form-input{
-      width: 93%;
-      margin: .8em 0;
-      outline: none;
-      border-style: none;
-      padding: 1.5em 1em;
-      border-radius: 15px;
-    }
-  
-    .email{
-      width: 55%;
-      display: inline-block;
-    }
-
-    .celular{
-      width: 38%;
-      display: inline-block;
-      margin-left: 1em;
-    }
-
-    .pais{
-      width: 20%;
-      display: inline-block;
-    }
-
-    .uf{
-      width: 10%;
-      display: inline-block;
-      margin: 0 2em;
-    }
-
-    .cidade{
-      width: 55%;
-      display: inline-block;
-    }
-
-    input[type = "checkbox"]{
-      border-radius: 15px;
-      width: 2em;
-      height: 2em;
-    }
-    .txtarea{
-      height: 10em;
-    }
-
-    .titulo-cestas-sacolinhas{
-      text-align: left;
-    }
-    .botao-quero-doar{
-      margin-top: 2em;
-      font-size: 1.5em;
-      border-radius: 25px;
-    }
-  }
-  
-  @media (min-width: 1600px) {
-    .bloco-testemunhos {
-      width: 62%;
-      padding: 9em 0;
-    }
-    .texto-testemunhos {
-      font-size: 20px;
-      line-height: 25px;
-    }
-  
-    .slide {
-      width: 40%;
-    }
-  
-    .video-testemunhos {
-      height: 30em;
-      object-fit: cover;
-      overflow: hidden;
-      display: block;
-    }
-  }
-  
