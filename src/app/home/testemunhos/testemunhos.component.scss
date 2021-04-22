@@ -151,7 +151,6 @@
   border-radius: 25px;
   margin: 1em 0;
   padding: 1.5em 1em;
-  padding-bottom: 0;
 
   input[type="file"] {
     position: absolute;
@@ -220,11 +219,16 @@
   }
 
   input[type="file"]:valid + .file-dummy {
-    border-color: rgba(0, 255, 0, 0.4);
-    background-color: rgba(0, 255, 0, 0.3);
+    background-color: #3685df;
+    color: white;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 56%;
 
     .success {
       display: inline-block;
+      
     }
     .default {
       display: none;
@@ -376,7 +380,7 @@
   }
   .botao-quero-doar {
     margin-top: 2em;
-    font-size: 1.5em;
+    font-size: 1.2em;
     border-radius: 25px;
   }
 }
