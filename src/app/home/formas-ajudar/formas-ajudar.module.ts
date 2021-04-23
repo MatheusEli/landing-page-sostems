@@ -6,6 +6,7 @@ import { FormasAjudarComponent } from './formas-ajudar.component';
 
 @NgModule({
   declarations: [FormasAjudarComponent],
-  imports: [CommonModule, FormsModule, FormasAjudarRoutingModule]
+  imports: [CommonModule, FormsModule, FormasAjudarRoutingModule],
+  exports: [FormasAjudarComponent]
 })
 export class FormasAjudarModule{}

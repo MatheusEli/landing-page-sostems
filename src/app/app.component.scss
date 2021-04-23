@@ -1,329 +1,339 @@
 * {
-    font-family: "Montserrat";
-  }
-  
-  .bloco-menu-principal {
-    background-color: black;
-    color: white;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: auto 100%;
-  }
-  
-  .bloco-principal {
-    background-color: rgba(1, 1, 1, 0.5);
-  }
-  
-  .hamburger-inner::after,
-  .hamburger-inner::before,
-  .hamburger-inner {
-    background-color: white;
-  }
-  
+  font-family: "Montserrat";
+}
+
+.bloco-menu-principal {
+  background-color: black;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto 100%;
+}
+
+.bloco-principal {
+  background-color: rgba(1, 1, 1, 0.5);
+}
+
+.hamburger-inner::after,
+.hamburger-inner::before,
+.hamburger-inner {
+  background-color: white;
+}
+
+.cabecalho {
+  font-weight: 500;
+  background-color: rgba(1, 1, 1, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-TEMS {
+  width: 10em;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.menu-opcao {
+  font-size: 0.9em;
+}
+
+.menu-opcao-link {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.menu-opcao-link:hover {
+  color: #4f8cd2;
+}
+
+.botao-doar {
+  background-color: #3685df;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao-doar:focus {
+  outline: none;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+.botao-doar:hover {
+  background-color: black;
+  color: #3685df;
+}
+
+.cabecalho {
+  padding: 1em 2%;
+}
+.cabecalho-navegacao {
+  width: 65%;
+  display: none;
+}
+.botao-doar {
+  font-weight: 650;
+  font-size: 0.9em;
+  width: 4.7em;
+  height: 4.5em;
+  border-radius: 100%;
+}
+
+.linha-cabecalho {
+  background-color: white;
+  height: 0.1px;
+}
+
+.titulo-personalizado {
+  font-family: "Signature";
+  color: #ff7e00;
+}
+
+.subtitulo-principal {
+  line-height: 23px;
+}
+
+.bloco-textos {
+  width: 100%;
+  text-align: center;
+}
+.linha-cabecalho {
+  width: 100%;
+  margin-bottom: 30%;
+}
+.titulo-principal {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+.titulo-personalizado {
+  font-size: 65px;
+}
+.subtitulo-principal {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.bloco-principal {
+  padding-bottom: 30%;
+}
+
+.sidebarIconToggle{
+  display:none
+}
+@media screen and (max-width: 750px) {
+.sidebarIconToggle{
+  display:block
+}
+}
+
+@media (max-width: 1018px) and (min-width: 768px) {
   .cabecalho {
-    font-weight: 500;
-    background-color: rgba(1, 1, 1, 0.5);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo-TEMS {
-    width: 10em;
-  }
-  
-  .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    text-transform: uppercase;
-  }
-  
-  .menu-opcao {
-    font-size: 0.9em;
-  }
-  
-  .menu-opcao-link {
-    color: white;
-    text-decoration: none;
-    transition: 0.2s;
-    font-weight: 600;
-  }
-  
-  .menu-opcao-link:hover {
-    color: gray;
-  }
-  
-  .botao-doar {
-    background-color: #3685df;
-    color: white;
-    border-style: none;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .botao-doar:focus {
-    outline: none;
-  }
-  
-  .hamburger:focus {
-    outline: none;
-  }
-  .botao-doar:hover {
-    background-color: black;
-    color: #3685df;
-  }
-  
-  .cabecalho {
-    padding: 1em 2%;
+    padding: 2em 2%;
   }
   .cabecalho-navegacao {
-    width: 65%;
+    width: 100%;
+    display: block;
+  }
+  .hamburger {
+    display: none;
+  }
+  .logo-TEMS {
     display: none;
   }
   .botao-doar {
     font-weight: 650;
-    font-size: 0.9em;
-    width: 4.7em;
-    height: 4.5em;
-    border-radius: 100%;
+    font-size: 1em;
+    padding: 0.5em 1.3em;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
   }
-  
-  .linha-cabecalho {
-    background-color: white;
-    height: 0.1px;
+
+  .botao-doar {
+    display: none;
   }
-  
-  .titulo-personalizado {
-    font-family: "Signature";
-    color: #ff7e00;
-  }
-  
-  .subtitulo-principal {
-    line-height: 23px;
-  }
-  
+
   .bloco-textos {
-    width: 100%;
-    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    padding-right: 2%;
+    text-align: right;
   }
   .linha-cabecalho {
-    width: 100%;
-    margin-bottom: 30%;
+    margin-bottom: 10%;
+    margin-left: auto;
   }
   .titulo-principal {
-    font-size: 55px;
-    font-weight: 700;
-    margin-bottom: 0.2em;
+    font-size: 85px;
   }
   .titulo-personalizado {
-    font-size: 65px;
+    font-size: 95px;
   }
   .subtitulo-principal {
-    width: 90%;
-    margin: 0 auto;
-    font-size: 14px;
+    width: 30em;
+    margin-right: 0;
+    margin-left: auto;
+    font-size: 16px;
   }
   .bloco-principal {
-    padding-bottom: 30%;
+    padding-bottom: 20%;
+  }
+}
+
+@media (max-width: 1140px) and (min-width: 1019px) {
+  .cabecalho {
+    padding: 2em 2%;
+  }
+  .cabecalho-navegacao {
+    width: 65%;
+    display: block;
+  }
+  .botao-doar {
+    font-weight: 650;
+    font-size: 1em;
+    padding: 0.5em 1.3em;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .bloco-textos {
+    width: 60%;
+    margin-left: auto;
+    padding-right: 2%;
+    text-align: right;
+  }
+  .linha-cabecalho {
+    margin-bottom: 10%;
+    margin-left: auto;
+  }
+  .titulo-principal {
+    font-size: 105px;
+  }
+  .titulo-personalizado {
+    font-size: 125px;
+  }
+  .subtitulo-principal {
+    width: 30em;
+    margin-right: 0;
+    margin-left: auto;
+    font-size: 16px;
+  }
+  .bloco-principal {
+    padding-bottom: 20%;
+  }
+}
+
+@media (min-width: 1141px) {
+  .bloco-menu-principal {
+    background-size: 135%;
+  }
+
+  .bloco-principal {
+    background: transparent;
+    //background: linear-gradient(to right, transparent 0%, black 100%);
+  }
+
+  .logo-TEMS {
+    width: 12em;
+  }
+
+  .cabecalho {
+    padding: 2em 2%;
+  }
+  .cabecalho-navegacao {
+    width: 65%;
+    display: block;
+  }
+  .botao-doar {
+    font-weight: 650;
+    font-size: 1em;
+    padding: 1em 1.5em;
+    border-radius: 25px;
+    width: auto;
+    height: auto;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .bloco-textos {
+    width: 60%;
+    margin-left: auto;
+    padding-right: 2%;
+    text-align: right;
+  }
+  .linha-cabecalho {
+    margin-bottom: 10%;
+    margin-left: auto;
+  }
+  .titulo-principal {
+    font-size: 105px;
+  }
+  .titulo-personalizado {
+    font-size: 125px;
+  }
+  .subtitulo-principal {
+    width: 30em;
+    margin-right: 0;
+    margin-left: auto;
+    font-size: 16px;
+  }
+  .bloco-principal {
+    padding-bottom: 20%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .bloco-menu-principal {
+    background-size: 125%;
+  }
+
+  .bloco-principal {
+    background: transparent;
+    //background: linear-gradient(to right, transparent 0%, black 100%);
+  }
+
+  .bloco-textos {
+    width: 60%;
+    margin-left: auto;
+    padding-right: 2%;
+    text-align: right;
   }
   
-  @media (max-width: 1018px) and (min-width: 768px) {
-    .cabecalho {
-      padding: 2em 2%;
-    }
-    .cabecalho-navegacao {
-      width: 100%;
-      display: block;
-    }
-    .hamburger {
-      display: none;
-    }
-    .logo-TEMS {
-      display: none;
-    }
-    .botao-doar {
-      font-weight: 650;
-      font-size: 1em;
-      padding: 0.5em 1.3em;
-      border-radius: 20px;
-      width: auto;
-      height: auto;
-    }
-  
-    .botao-doar {
-      display: none;
-    }
-  
-    .bloco-textos {
-      width: 70%;
-      margin-left: auto;
-      padding-right: 2%;
-      text-align: right;
-    }
-    .linha-cabecalho {
-      margin-bottom: 10%;
-      margin-left: auto;
-    }
-    .titulo-principal {
-      font-size: 85px;
-    }
-    .titulo-personalizado {
-      font-size: 95px;
-    }
-    .subtitulo-principal {
-      width: 30em;
-      margin-right: 0;
-      margin-left: auto;
-      font-size: 16px;
-    }
-    .bloco-principal {
-      padding-bottom: 20%;
-    }
+  .linha-cabecalho {
+    margin-bottom: 10%;
+    margin-left: auto;
   }
-  
-  @media (max-width: 1140px) and (min-width: 1019px) {
-    .cabecalho {
-      padding: 2em 2%;
-    }
-    .cabecalho-navegacao {
-      width: 65%;
-      display: block;
-    }
-    .botao-doar {
-      font-weight: 650;
-      font-size: 1em;
-      padding: 0.5em 1.3em;
-      border-radius: 20px;
-      width: auto;
-      height: auto;
-    }
-    .hamburger {
-      display: none;
-    }
-  
-    .bloco-textos {
-      width: 60%;
-      margin-left: auto;
-      padding-right: 2%;
-      text-align: right;
-    }
-    .linha-cabecalho {
-      margin-bottom: 10%;
-      margin-left: auto;
-    }
-    .titulo-principal {
-      font-size: 105px;
-    }
-    .titulo-personalizado {
-      font-size: 125px;
-    }
-    .subtitulo-principal {
-      width: 30em;
-      margin-right: 0;
-      margin-left: auto;
-      font-size: 16px;
-    }
-    .bloco-principal {
-      padding-bottom: 20%;
-    }
+  .titulo-principal {
+    font-size: 135px;
   }
-  
-  @media (min-width: 1141px) {
-    .bloco-menu-principal {
-      background-size: 135%;
-    }
-  
-    .bloco-principal {
-      background: transparent;
-      //background: linear-gradient(to right, transparent 0%, black 100%);
-    }
-  
-    .logo-TEMS {
-      width: 12em;
-    }
-  
-    .cabecalho {
-      padding: 2em 2%;
-    }
-    .cabecalho-navegacao {
-      width: 65%;
-      display: block;
-    }
-    .botao-doar {
-      font-weight: 650;
-      font-size: 1em;
-      padding: 1em 1.5em;
-      border-radius: 25px;
-      width: auto;
-      height: auto;
-    }
-    .hamburger {
-      display: none;
-    }
-  
-    .bloco-textos {
-      width: 60%;
-      margin-left: auto;
-      padding-right: 2%;
-      text-align: right;
-    }
-    .linha-cabecalho {
-      margin-bottom: 10%;
-      margin-left: auto;
-    }
-    .titulo-principal {
-      font-size: 105px;
-    }
-    .titulo-personalizado {
-      font-size: 125px;
-    }
-    .subtitulo-principal {
-      width: 30em;
-      margin-right: 0;
-      margin-left: auto;
-      font-size: 16px;
-    }
-    .bloco-principal {
-      padding-bottom: 20%;
-    }
+  .titulo-personalizado {
+    font-size: 155px;
   }
-  
-  @media (min-width: 1600px) {
-    .bloco-menu-principal {
-      background-size: 125%;
-    }
-  
-    .bloco-principal {
-      background: transparent;
-      //background: linear-gradient(to right, transparent 0%, black 100%);
-    }
-  
-    .bloco-textos {
-      width: 60%;
-      margin-left: auto;
-      padding-right: 2%;
-      text-align: right;
-    }
-    .linha-cabecalho {
-      margin-bottom: 10%;
-      margin-left: auto;
-    }
-    .titulo-principal {
-      font-size: 135px;
-    }
-    .titulo-personalizado {
-      font-size: 155px;
-    }
-    .subtitulo-principal {
-      width: 30em;
-      margin-right: 0;
-      margin-left: auto;
-      font-size: 22px;
-    }
-    .bloco-principal {
-      padding-bottom: 20%;
-    }
+  .subtitulo-principal {
+    width: 30em;
+    margin-right: 0;
+    margin-left: auto;
+    font-size: 22px;
   }
-  
+  .bloco-principal {
+    padding-bottom: 20%;
+  }
+}

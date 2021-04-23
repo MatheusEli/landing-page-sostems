@@ -6,6 +6,7 @@ import { SobreCasaComponent } from './sobre-casa.component';
 
 @NgModule({
   declarations: [SobreCasaComponent],
-  imports: [CommonModule, FormsModule, SobreCasaRoutingModule]
+  imports: [CommonModule, FormsModule, SobreCasaRoutingModule],
+  exports: [SobreCasaComponent]
 })
 export class SobreCasaModule{}

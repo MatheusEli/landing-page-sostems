@@ -8,6 +8,7 @@
 
 .formulario {
   width: 90%;
+  height: 51em;
   border-radius: 25px;
   box-shadow: 0px 0px 15px 0px #dcdcdc;
   background-color: white;
@@ -71,7 +72,7 @@
   outline: none;
 }
 
-.botao-depoimento:hover {
+.botao-depoimento:enabled:hover {
   background-color: white;
   color: #3685df;
 }
@@ -173,6 +174,9 @@
   margin-bottom: 1em !important;
 }
 
+.lgpd{
+  cursor: pointer;
+}
 
 @media (min-width: 1141px) {
 
