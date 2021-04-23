@@ -1,23 +1,18 @@
-import { Component, ElementRef, ViewChild } from "@angular/core";
-import { FormBuilder, FormControl, FormGroup, Validators } from "@angular/forms";
-import { Observable } from "rxjs";
-import { TestemunhoService } from "src/app/services/testemunhos.service";
-import {
-    AngularFireStorage,
-    AngularFireUploadTask
-} from '@angular/fire/storage';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { AngularFireStorage, AngularFireUploadTask } from '@angular/fire/storage';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { TestemunhoService } from 'src/app/services/testemunhos.service';
 
 @Component({
-    selector: 'lp-testemunhos',
-    templateUrl: './testemunhos.component.html',
-    styleUrls: ['./testemunhos.component.scss']
+  selector: 'lp-form-video',
+  templateUrl: './form-video.component.html',
+  styleUrls: ['./form-video.component.scss']
 })
-export class TestemunhosComponent {
-    depoimentoForm: FormGroup;
+export class FormVideoComponent{
+  depoimentoForm: FormGroup;
 
     //Para upload do video
-
-    @ViewChild('inputFile', { static: true }) inputFile: ElementRef;
     uploadPercent: Observable<number>;
     downloadURL: Observable<string>;
     task: AngularFireUploadTask;
@@ -38,9 +33,8 @@ export class TestemunhosComponent {
             pais: new FormControl('', Validators.required),
             UF: new FormControl('', Validators.required),
             cidade: new FormControl('', Validators.required),
-            depoimento: new FormControl('', Validators.required),
             lgpd: new FormControl(false, Validators.requiredTrue),
-            depoimentoVideo: ''
+            depoimentoVideo: new FormControl('', Validators.required),
         });
     }
 
@@ -64,6 +58,5 @@ export class TestemunhosComponent {
             });
         });
         this.uploadPercent = this.task.percentageChanges();
-        this.inputFile.nativeElement.value = '';
     }
 }

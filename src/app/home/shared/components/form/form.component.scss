@@ -1,0 +1,163 @@
+* {
+  font-family: "Montserrat";
+}
+
+.bolder {
+  font-weight: 600;
+}
+
+.formulario {
+  width: 90%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px 0px #dcdcdc;
+  background-color: white;
+  padding: 1em;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.titulo-cestas-sacolinhas {
+  font-size: 22px;
+  color: #757575;
+  margin-top: 0.8em;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: left;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.form-control {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-input {
+  width: 93%;
+  margin: 1em 0;
+  outline: none;
+  border-style: none;
+  padding: 1em;
+  background-color: #f8f8f8;
+  border-radius: 25px;
+}
+
+.txtarea {
+  height: 10em;
+}
+.botao-depoimento {
+  font-weight: 650;
+  font-size: 1em;
+  padding: 0.6em 2em;
+  border-radius: 15px;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+  transition: .5s;
+}
+
+.botao-depoimento:disabled{
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.botao-depoimento:enabled{
+
+  background-color: #3685df;
+}
+
+.botao-depoimento:focus {
+  outline: none;
+}
+
+.botao-depoimento:hover {
+  background-color: white;
+  color: #3685df;
+}
+
+.lgpd-form{
+  margin-bottom: 1em !important;
+}
+
+
+@media (min-width: 1141px) {
+
+  .formulario {
+    width: 88%;
+    border-radius: 35px;
+    box-shadow: 0px 0px 15px 0px #dcdcdc;
+    background-color: white;
+    padding: 1.5em;
+    margin: 0 auto;
+    margin-top: 4em;
+  }
+
+  .titulo-cestas-sacolinhas {
+    font-size: 22px;
+    color: #757575;
+    margin-top: 0.8em;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: left;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+
+  .form-control {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .form-input {
+    width: 93%;
+    margin: 0.8em 0;
+    outline: none;
+    border-style: none;
+    padding: 1.5em 1em;
+    border-radius: 15px;
+  }
+
+  .email {
+    width: 55%;
+    display: inline-block;
+  }
+
+  .celular {
+    width: 38%;
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+  .pais {
+    width: 20%;
+    display: inline-block;
+  }
+
+  .uf {
+    width: 10%;
+    display: inline-block;
+    margin: 0 2em;
+  }
+
+  .cidade {
+    width: 55%;
+    display: inline-block;
+  }
+
+  .txtarea {
+    height: 10em;
+  }
+
+  .titulo-cestas-sacolinhas {
+    text-align: left;
+  }
+  .botao-depoimento {
+    margin-top: 2em;
+    font-size: 1.2em;
+    border-radius: 25px;
+  }
+}

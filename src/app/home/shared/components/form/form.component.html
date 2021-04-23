@@ -1,0 +1,73 @@
+<form #form="ngForm" [formGroup]="depoimentoForm" class="formulario" (submit)="enviar()">
+    <h4 class="titulo-cestas-sacolinhas">
+        Depoimento em texto
+    </h4>
+
+    <div class="form-control">
+        <input formControlName="fullName" placeholder="Nome completo" class="form-input" />
+    </div>
+
+    <div class="form-control email">
+        <input #emailInput formControlName="email" placeholder="E-mail" class="form-input" autofocus />
+    </div>
+
+    <div class="form-control celular">
+        <input formControlName="celular" placeholder="Celular" class="form-input" />
+    </div>
+    <div class="form-control pais">
+        <input formControlName="pais" placeholder="País" class="form-input" />
+    </div>
+    <div class="form-control uf">
+        <input formControlName="UF" placeholder="UF" class="form-input" />
+    </div>
+    <div class="form-control cidade">
+        <input formControlName="cidade" placeholder="Cidade" class="form-input" />
+    </div>
+    <div class="form-control">
+        <textarea type="textarea" formControlName="depoimento" placeholder="Depoimento"
+            class="form-input txtarea"></textarea>
+    </div>
+
+
+    <div class="form-control lgpd-form">
+        <input formControlName="lgpd" type="checkbox" id="LGPD" name="LGPD" value="LGPD" />
+        <label for="LGPD" style="font-size: 13px; color: #757575">Eu autorizo o uso dos meus dados pelo
+            TEMS</label>
+    </div>
+
+    <lp-vmessage *ngIf="depoimentoForm.get('fullName')?.errors?.required 
+        && (form.submitted || depoimentoForm.get('fullName').touched)" text="Digite seu nome completo!">
+    </lp-vmessage>
+
+
+    <lp-vmessage *ngIf="depoimentoForm.get('fullName')?.errors?.minlength 
+        && form.submitted" text="Tamanho mínimo de 2 caracteres!"></lp-vmessage>
+
+
+    <lp-vmessage *ngIf="depoimentoForm.get('fullName')?.errors?.maxlength 
+        && form.submitted" text="Tamanho máximo de 40 caracteres!"></lp-vmessage>
+
+    <lp-vmessage *ngIf="depoimentoForm.get('email')?.errors?.required 
+        && (form.submitted || depoimentoForm.get('email').touched)" text="Digite seu email!"></lp-vmessage>
+
+    <lp-vmessage *ngIf="depoimentoForm.get('email')?.errors?.email 
+        && form.submitted" text="Email inválido!">
+    </lp-vmessage>
+
+    <lp-vmessage *ngIf="depoimentoForm.get('pais')?.errors?.required 
+        && form.submitted" text="Digite seu País"></lp-vmessage>
+
+    <lp-vmessage *ngIf="depoimentoForm.get('depoimento')?.errors?.required 
+        && form.submitted" text="Digite seu depoimento"></lp-vmessage>
+
+    <lp-vmessage *ngIf="depoimentoForm.get('cidade')?.errors?.required 
+        && form.submitted" text="Digite sua cidade"></lp-vmessage>
+
+    <lp-vmessage *ngIf="depoimentoForm.get('UF')?.errors?.required 
+        && form.submitted" text="Digite sua UF"></lp-vmessage>
+
+    <lp-vmessage *ngIf="depoimentoForm.get('celular')?.errors?.required 
+        && form.submitted" text="Digite seu nº de celular"></lp-vmessage>
+
+    <button class="botao-depoimento" [disabled]="!depoimentoForm.valid" type="submit">ENVIAR DEPOIMENTO</button>
+</form>

@@ -10,87 +10,9 @@
             poderão ser exibidos em nossas lives. Escolha a forma que mais lhe agradar para enviar!
         </p>
 
-        <div class = "container-formulario">
-            <form #form="ngForm" [formGroup]="depoimentoForm" class="formulario" (submit)="enviar()">
-                <h4 class="titulo-cestas-sacolinhas">
-                   Depoimento em texto
-                </h4>
-
-                <div class="form-control">
-                    <input formControlName="fullName" placeholder="Nome completo" class="form-input" />
-                </div>
-                <div class="form-control email">
-                    <input #emailInput formControlName="email" placeholder="E-mail" class="form-input" autofocus />
-                </div>
-                <div class="form-control celular">
-                    <input formControlName="celular" placeholder="Celular" class="form-input" />
-                </div>
-                <div class="form-control pais">
-                    <input formControlName="pais" placeholder="País" class="form-input" />
-                </div>
-                <div class="form-control uf">
-                    <input formControlName="UF" placeholder="UF" class="form-input" />
-                </div>
-                <div class="form-control cidade">
-                    <input formControlName="cidade" placeholder="Cidade" class="form-input" />
-                </div>
-                <div class="form-control">
-                    <textarea type="textarea" formControlName="depoimento" placeholder="Depoimento"
-                        class="form-input txtarea"></textarea>
-                </div>
-
-
-                <div class="form-control">
-                    <input type="checkbox" id="LGPD" name="LGPD" value="LGPD" />
-                    <label for="LGPD" style="font-size: 13px; color: #757575">Eu autorizo o uso dos meus dados pelo
-                        TEMS</label>
-                </div>
-
-                <button class="botao-quero-doar" type="submit">ENVIAR DEPOIMENTO</button>
-            </form>
-
-            <form #form="ngForm" [formGroup]="depoimentoForm" class="formulario" (submit)="enviar()">
-                <h4 class="titulo-cestas-sacolinhas">
-                    Depoimento em vídeo
-                </h4>
-
-                <div class="form-control">
-                    <input formControlName="fullName" placeholder="Nome completo" class="form-input" />
-                </div>
-                <div class="form-control email">
-                    <input #emailInput formControlName="email" placeholder="E-mail" class="form-input" autofocus />
-                </div>
-                <div class="form-control celular">
-                    <input formControlName="celular" placeholder="Celular" class="form-input" />
-                </div>
-                <div class="form-control pais">
-                    <input formControlName="pais" placeholder="País" class="form-input" />
-                </div>
-                <div class="form-control uf">
-                    <input formControlName="UF" placeholder="UF" class="form-input" />
-                </div>
-                <div class="form-control cidade">
-                    <input formControlName="cidade" placeholder="Cidade" class="form-input" />
-                </div>
-
-                <div class="form-group file-area">
-                    <label for="images" class = "input-label"><span class = "depoimento-titulo">Depoimento</span><br>Formato: mp4<br>Tamanho: máx. de 250 mb<br>Tempo limite: 2 min</label>
-                <input type="file" (change)="upload($event)" name="images" id="images" required="required"/>
-                <div class="file-dummy">
-                  <div class="success">Seu vídeo foi carregado!</div>
-                  <div class="default">CARREGAR VÍDEO</div>
-                </div>
-              </div>
-
-
-                <div class="form-control">
-                    <input class = "lgpd" formControlName="lgpd" type="checkbox" id="LGPD" name="LGPD" value="LGPD" />
-                    <label for="LGPD" style="font-size: 13px; color: #757575">Eu autorizo o uso dos meus dados pelo
-                        TEMS</label>
-                </div>
-
-                <button class="botao-quero-doar" type="submit">ENVIAR DEPOIMENTO</button>
-            </form>
+        <div class="container-formulario">
+            <lp-form></lp-form>
+            <lp-form-video></lp-form-video>
         </div>
     </div>
 </section>

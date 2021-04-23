@@ -1,19 +1,16 @@
-import { Component, ElementRef, ViewChild } from "@angular/core";
-import { FormBuilder, FormControl, FormGroup, Validators } from "@angular/forms";
-import { Observable } from "rxjs";
-import { TestemunhoService } from "src/app/services/testemunhos.service";
-import {
-    AngularFireStorage,
-    AngularFireUploadTask
-} from '@angular/fire/storage';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { AngularFireStorage, AngularFireUploadTask } from '@angular/fire/storage';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { TestemunhoService } from 'src/app/services/testemunhos.service';
 
 @Component({
-    selector: 'lp-testemunhos',
-    templateUrl: './testemunhos.component.html',
-    styleUrls: ['./testemunhos.component.scss']
+  selector: 'lp-form',
+  templateUrl: './form.component.html',
+  styleUrls: ['./form.component.scss']
 })
-export class TestemunhosComponent {
-    depoimentoForm: FormGroup;
+export class FormComponent{
+  depoimentoForm: FormGroup;
 
     //Para upload do video
 

@@ -1,0 +1,249 @@
+* {
+  font-family: "Montserrat";
+}
+
+.bolder {
+  font-weight: 600;
+}
+
+.formulario {
+  width: 90%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px 0px #dcdcdc;
+  background-color: white;
+  padding: 1em;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.titulo-cestas-sacolinhas {
+  font-size: 22px;
+  color: #757575;
+  margin-top: 0.8em;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: left;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.form-control {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-input {
+  width: 93%;
+  margin: 1em 0;
+  outline: none;
+  border-style: none;
+  padding: 1em;
+  background-color: #f8f8f8;
+  border-radius: 25px;
+}
+
+.botao-depoimento {
+  font-weight: 650;
+  font-size: 1em;
+  padding: 0.6em 2em;
+  border-radius: 15px;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+  transition: .5s;
+}
+
+.botao-depoimento:disabled{
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.botao-depoimento:enabled{
+
+  background-color: #3685df;
+}
+
+.botao-depoimento:focus {
+  outline: none;
+}
+
+.botao-depoimento:hover {
+  background-color: white;
+  color: #3685df;
+}
+
+//------- FILE INPUT -------//
+.file-area {
+  width: 93%;
+  position: relative;
+  background-color: #f8f8f8;
+  border-radius: 25px;
+  margin: 1em 0;
+  padding: 1.5em 1em;
+
+  input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 93%;
+    margin: 0 auto;
+  }
+
+  input[type = "file"]:focus{
+    outline: none;
+  }
+
+  .input-label{
+    display: block;
+    text-align: left;
+    color: #757575;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .depoimento-titulo{
+    font-size: 16px;
+    font-weight: 600;
+    color: #757575;
+  }
+  .file-dummy {
+    width: 93%;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    font-weight: 600;
+    color: #757575;
+
+    .success {
+      display: none;
+    }
+
+    .default{
+      padding: 1em;
+      display: inline-block;
+      border-radius: 15px;
+      background-color: rgba(0, 0, 0, 0.2);
+      color: white;
+      font-weight: 600;
+    }
+  }
+
+  .file-dummy:focus{
+    outline: none;
+  }
+
+  &:hover .file-dummy {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  input[type="file"]:focus + .file-dummy {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+
+  input[type="file"]:valid + .file-dummy {
+    background-color: #3685df;
+    color: white;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 56%;
+
+    .success {
+      display: inline-block;
+      
+    }
+    .default {
+      display: none;
+    }
+  }
+}
+
+.lgpd-form{
+  margin-bottom: 1em !important;
+}
+
+
+@media (min-width: 1141px) {
+
+  .formulario {
+    width: 88%;
+    border-radius: 35px;
+    box-shadow: 0px 0px 15px 0px #dcdcdc;
+    background-color: white;
+    padding: 1.5em;
+    margin: 0 auto;
+    margin-top: 4em;
+  }
+
+  .titulo-cestas-sacolinhas {
+    font-size: 22px;
+    color: #757575;
+    margin-top: 0.8em;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: left;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+
+  .form-control {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .form-input {
+    width: 93%;
+    margin: 0.8em 0;
+    outline: none;
+    border-style: none;
+    padding: 1.5em 1em;
+    border-radius: 15px;
+  }
+
+  .email {
+    width: 55%;
+    display: inline-block;
+  }
+
+  .celular {
+    width: 38%;
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+  .pais {
+    width: 20%;
+    display: inline-block;
+  }
+
+  .uf {
+    width: 10%;
+    display: inline-block;
+    margin: 0 2em;
+  }
+
+  .cidade {
+    width: 55%;
+    display: inline-block;
+  }
+
+  .titulo-cestas-sacolinhas {
+    text-align: left;
+  }
+  .botao-depoimento {
+    margin-top: 2em;
+    font-size: 1.2em;
+    border-radius: 25px;
+  }
+}
