@@ -60,11 +60,23 @@
     outline: none;
 }
 
-.botao-quero-doar:hover {
+.botao-quero-doar:hover{
     background-color: white;
     color: #3685df;
+
+    .botao-pix{
+        color: #3685df;
+    }
 }
 
+.botao-pix {
+    text-decoration: none;
+    color: white;
+}
+
+.botao-pix:hover{
+    color: #3685df;
+}
 .bloco-atendimentos-espirituais {
     width: 90%;
     margin: 5em auto;
@@ -132,25 +144,19 @@
     font-weight: 600;
     text-align: center;
 }
-
 .next-button {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  background-color: #ff7e00;
-  border-style: none;
-  cursor: pointer;
-  transition: 0.3s;
-  margin-top: 5em;
-  box-shadow: 0px 15px 15px 0px #dcdcdc;
-}
-
-.next-button-img{
-  width: 50px;
-  height: 50px;
-  padding-top: .5em;
-  padding-right: .5em;
-}
+    border-style: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5em;
+    background-color: transparent;
+  }
+  
+  .next-button-img{
+    width: 100px;
+    height: 100px;
+  }
 @media (max-width: 1018px) and (min-width: 768px) {
     .bloco-atendimentos-espirituais {
         margin: 4em auto;

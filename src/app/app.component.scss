@@ -123,8 +123,13 @@
   outline: none;
 }
 .botao-doar:hover {
+
   background-color: black;
   color: #3685df;
+
+  .botao-pix{
+    color: #3685df;
+  }
 }
 
 .cabecalho {
@@ -140,6 +145,12 @@
   width: 4.7em;
   height: 4.5em;
   border-radius: 100%;
+}
+
+
+.botao-pix {
+  text-decoration: none;
+  color: white;
 }
 
 .linha-cabecalho {

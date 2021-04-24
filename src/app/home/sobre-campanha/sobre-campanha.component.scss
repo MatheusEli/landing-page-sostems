@@ -50,6 +50,24 @@
   color: #3685df;
 }
 
+.botao-quero-doar:hover {
+  
+  background-color: white;
+  color: #3685df;
+  .botao-pix{
+    color: #3685df;
+  }
+}
+
+.botao-pix {
+  text-decoration: none;
+  color: white;
+}
+
+.botao-pix:hover{
+  color: #3685df;
+}
+
 .bloco-sobre-campanha {
   width: 90%;
   margin: 5em auto;

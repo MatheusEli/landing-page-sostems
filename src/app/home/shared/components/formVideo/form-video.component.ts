@@ -26,8 +26,6 @@ export class FormVideoComponent {
   downloadURL: Observable<string>;
   task: AngularFireUploadTask;
   complete: boolean;
-
-  botaoEnviar = document.querySelector("botao-input-file");
   constructor(
     private formBuilder: FormBuilder,
     private testemunhoService: TestemunhoService,
@@ -53,15 +51,16 @@ export class FormVideoComponent {
   }
 
   enviar(): void {
-    this.testemunhoService.createOrUpdate(this.depoimentoForm.value);
+    this.testemunhoService.createOrUpdate(this.depoimentoForm.value).then(() => alert("Depoimento enviado com sucesso!"), () => alert("Não foi possível enviar seu depoimento!"));
     this.formDirective.resetForm();
   }
 
   async upload(event) {
     this.complete = false;
     const file = event.target.files[0];
+    const botaoEnviar = document.getElementById("images");
 
-    if(file.size < 250000000){
+    if (file.size < 250000000) {
       const path = `videos/${this.depoimentoForm.controls['email'].value}`;
       const fileRef = this.storage.ref(path);
       this.task = this.storage.upload(path, file);
@@ -73,9 +72,10 @@ export class FormVideoComponent {
           });
         });
       });
-    this.uploadPercent = this.task.percentageChanges();
-    }else{
+      this.uploadPercent = this.task.percentageChanges();
+    } else {
       alert("Arquivo muito grande!");
+      botaoEnviar.setAttribute("isvalid", "false");
       this.depoimentoForm.controls['depoimentoVideo'].setErrors(null);
     }
   }

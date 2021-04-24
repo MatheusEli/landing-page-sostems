@@ -44,24 +44,17 @@
 }
 
 .next-button {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  background-color: #ff7e00;
   border-style: none;
   cursor: pointer;
   display: block;
   margin: 0 auto;
-  transition: 0.3s;
   margin-top: 5em;
-  box-shadow: 0px 15px 15px 0px #dcdcdc;
+  background-color: transparent;
 }
 
 .next-button-img{
-  width: 50px;
-  height: 50px;
-  padding-top: .5em;
-  padding-right: .5em;
+  width: 100px;
+  height: 100px;
 }
 @media (max-width: 1018px) and (min-width: 768px) {
   .bloco-testemunhos {
@@ -118,7 +111,9 @@
   .container-formulario {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    width: 55%;
+    margin: 0 auto;
   }
 }
 
@@ -130,6 +125,13 @@
   .texto-testemunhos {
     font-size: 20px;
     line-height: 25px;
+  }
+  .container-formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    margin: 0 auto;
   }
 
 }

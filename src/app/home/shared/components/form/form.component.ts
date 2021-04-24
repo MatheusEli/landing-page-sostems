@@ -55,7 +55,7 @@ export class FormComponent {
   }
 
   enviar(): void {
-    this.testemunhoService.createOrUpdate(this.depoimentoForm.value);
+    this.testemunhoService.createOrUpdate(this.depoimentoForm.value).then(() => alert("Depoimento enviado com sucesso!"), () => alert("Não foi possível enviar seu depoimento!"));
     this.formDirective.resetForm();
   }
 
