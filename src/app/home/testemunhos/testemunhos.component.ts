@@ -6,6 +6,7 @@ import {
     AngularFireStorage,
     AngularFireUploadTask
 } from '@angular/fire/storage';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'lp-testemunhos',
@@ -23,7 +24,7 @@ export class TestemunhosComponent {
     task: AngularFireUploadTask;
     complete: boolean;
 
-    constructor(private formBuilder: FormBuilder, private testemunhoService: TestemunhoService, private storage: AngularFireStorage) {
+    constructor(private router: Router,private formBuilder: FormBuilder, private testemunhoService: TestemunhoService, private storage: AngularFireStorage) {
         this.depoimentoForm = formBuilder.group({
             email: ['', [Validators.required, Validators.email]],
             fullName: [
@@ -66,4 +67,14 @@ export class TestemunhosComponent {
         this.uploadPercent = this.task.percentageChanges();
         this.inputFile.nativeElement.value = '';
     }
+
+  mudaBloco(): void{
+    this.router
+    .navigate(['sobre-campanha'])
+    .then(() =>
+      document
+        .getElementById('campanha')
+        .scrollIntoView({ behavior: 'smooth' })
+    );
+  }
 }

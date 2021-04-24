@@ -26,7 +26,7 @@
         <label for="images" class="input-label"><span
                 class="depoimento-titulo">Depoimento</span><br>Formato: mp4<br>Tamanho: máx. de 250
             mb<br>Tempo limite: 2 min</label>
-        <input type="file" (change)="upload($event)" name="images" id="images" required/>
+        <input class = "botao-input-file" type="file" (change)="upload($event)" name="images" id="images" required/>
         <div class="file-dummy">
             <div class="success">Seu vídeo foi carregado!</div>
             <div class="default">CARREGAR VÍDEO</div>
@@ -40,38 +40,38 @@
             TEMS</a></label>
     </div>
 
-    <lp-vmessage *ngIf="depoimentoForm.get('fullName')?.errors?.required 
+    <lp-vmessage *ngIf="depoimentoForm.get('fullName')?.errors?.required
         && (form.submitted || depoimentoForm.get('fullName').touched)" text="Digite seu nome completo!">
     </lp-vmessage>
 
 
-    <lp-vmessage *ngIf="depoimentoForm.get('fullName')?.errors?.minlength 
+    <lp-vmessage *ngIf="depoimentoForm.get('fullName')?.errors?.minlength
         && form.submitted" text="Tamanho mínimo de 2 caracteres!"></lp-vmessage>
 
 
-    <lp-vmessage *ngIf="depoimentoForm.get('fullName')?.errors?.maxlength 
+    <lp-vmessage *ngIf="depoimentoForm.get('fullName')?.errors?.maxlength
         && form.submitted" text="Tamanho máximo de 40 caracteres!"></lp-vmessage>
 
-    <lp-vmessage *ngIf="depoimentoForm.get('email')?.errors?.required 
+    <lp-vmessage *ngIf="depoimentoForm.get('email')?.errors?.required
         && (form.submitted || depoimentoForm.get('email').touched)" text="Digite seu email!"></lp-vmessage>
 
-    <lp-vmessage *ngIf="depoimentoForm.get('email')?.errors?.email 
+    <lp-vmessage *ngIf="depoimentoForm.get('email')?.errors?.email
         && form.submitted" text="Email inválido!">
     </lp-vmessage>
 
-    <lp-vmessage *ngIf="depoimentoForm.get('pais')?.errors?.required 
+    <lp-vmessage *ngIf="depoimentoForm.get('pais')?.errors?.required
         && form.submitted" text="Digite seu País"></lp-vmessage>
 
-    <lp-vmessage *ngIf="depoimentoForm.get('depoimentoVideo')?.errors?.required 
+    <lp-vmessage *ngIf="depoimentoForm.get('depoimentoVideo')?.errors?.required
         && form.submitted" text="Insira seu depoimento em Vídeo"></lp-vmessage>
 
-    <lp-vmessage *ngIf="depoimentoForm.get('cidade')?.errors?.required 
+    <lp-vmessage *ngIf="depoimentoForm.get('cidade')?.errors?.required
         && form.submitted" text="Digite sua cidade"></lp-vmessage>
 
-    <lp-vmessage *ngIf="depoimentoForm.get('UF')?.errors?.required 
+    <lp-vmessage *ngIf="depoimentoForm.get('UF')?.errors?.required
         && form.submitted" text="Digite sua UF"></lp-vmessage>
 
-    <lp-vmessage *ngIf="depoimentoForm.get('celular')?.errors?.required 
+    <lp-vmessage *ngIf="depoimentoForm.get('celular')?.errors?.required
         && form.submitted" text="Digite seu nº de celular"></lp-vmessage>
 
     <button class="botao-depoimento" [disabled] = "!depoimentoForm.valid" type="submit">ENVIAR DEPOIMENTO</button>

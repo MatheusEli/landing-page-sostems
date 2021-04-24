@@ -2,6 +2,57 @@
   font-family: "Montserrat";
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 23px;
+  margin: .5em auto;
+  padding-bottom: 1em;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  border-bottom: 1px solid gray;
+}
+
+.sidenav a:first-of-type{
+  border-bottom: none;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav a:active{
+  color: #3685df;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
 .bloco-menu-principal {
   background-color: black;
   color: white;
@@ -133,6 +184,8 @@
 .sidebarIconToggle{
   display:none
 }
+
+
 @media screen and (max-width: 750px) {
 .sidebarIconToggle{
   display:block
@@ -140,6 +193,9 @@
 }
 
 @media (max-width: 1018px) and (min-width: 768px) {
+  .menu-mobile{
+    display: none;
+  }
   .cabecalho {
     padding: 2em 2%;
   }
@@ -194,6 +250,9 @@
 }
 
 @media (max-width: 1140px) and (min-width: 1019px) {
+  .menu-mobile{
+    display: none;
+  }
   .cabecalho {
     padding: 2em 2%;
   }
@@ -241,6 +300,9 @@
 }
 
 @media (min-width: 1141px) {
+  .menu-mobile{
+    display: none;
+  }
   .bloco-menu-principal {
     background-size: 135%;
   }
@@ -301,6 +363,10 @@
 }
 
 @media (min-width: 1600px) {
+  .menu-mobile{
+    display: none;
+  }
+
   .bloco-menu-principal {
     background-size: 125%;
   }
@@ -316,7 +382,7 @@
     padding-right: 2%;
     text-align: right;
   }
-  
+
   .linha-cabecalho {
     margin-bottom: 10%;
     margin-left: auto;
