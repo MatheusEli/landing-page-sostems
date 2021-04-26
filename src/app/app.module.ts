@@ -10,6 +10,10 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 
+import { LocationStrategy, HashLocationStrategy} from '@angular/common';
+
+import { NgxLoadingModule } from 'ngx-loading';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,9 +24,10 @@ import { environment } from '../environments/environment';
     CoreModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    RouterModule
+    RouterModule,
+    NgxLoadingModule.forRoot({})
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

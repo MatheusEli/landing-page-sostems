@@ -26,6 +26,7 @@
     "classlist.js": "^1.1.20150312",
     "firebase": "^8.2.6",
     "hamburgers": "^1.1.3",
+    "ngx-loading": "^8.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "web-animations-js": "^2.3.2",
