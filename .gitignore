@@ -48,3 +48,5 @@ testem.log
 Thumbs.db
 *.mp4
 *.m4v
+src/environments/environment.ts
+src/environments/environment.prod.ts
