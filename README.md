@@ -2,7 +2,7 @@
 
 https://tems.com.br/sostems/
 
-Página WEB feita em Angular, Typescript, HTML e CSS para a campanha SOS TEMS do Centro Espiritual Maria Santíssima para angariar fundos e mostrar todo o trabalho de caridade realizado.
+Página WEB feita em Angular, Typescript, HTML e SCSS para a campanha SOS TEMS do Centro Espiritual Maria Santíssima para angariar fundos e mostrar todo o trabalho de caridade realizado.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
 
