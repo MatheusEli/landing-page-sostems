@@ -5,8 +5,10 @@ import {
   NavigationEnd,
   NavigationError,
   NavigationStart,
-  Router
+  Router,
 } from '@angular/router';
+
+declare let gtag: Function;
 
 @Component({
   selector: 'app-root',
@@ -14,11 +16,9 @@ import {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-
   public loading = false;
 
   constructor(private router: Router) {
-
     this.router.events.subscribe((event: Event) => {
       switch (true) {
         case event instanceof NavigationStart: {
@@ -36,8 +36,12 @@ export class AppComponent {
           break;
         }
       }
+      if (event instanceof NavigationEnd) {
+        gtag('config', 'G-5R4LSDRPP6', {
+          page_path: event.urlAfterRedirects,
+        });
+      }
     });
-
   }
 
   toSobre(): void {
@@ -100,10 +104,10 @@ export class AppComponent {
   }
 
   openNav(): void {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById('mySidenav').style.width = '250px';
   }
 
   closeNav(): void {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById('mySidenav').style.width = '0';
   }
 }
