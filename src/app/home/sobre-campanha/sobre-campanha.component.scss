@@ -23,11 +23,6 @@
   font-weight: 600;
 }
 
-.texto-img-despesa {
-  margin-top: 1em;
-  text-align: center;
-  color: #757575;
-}
 
 .botao-ajude-agora {
   font-weight: 650;
@@ -48,6 +43,10 @@
 .botao-ajude-agora:hover {
   background-color: white;
   color: #3685df;
+
+  .botao-pix{
+    color: #3685df;
+  }
 }
 
 .botao-quero-doar:hover {
@@ -93,17 +92,6 @@
   margin: 0 auto;
 }
 
-.lista-despesas {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 3em auto;
-}
-
-.img-despesa {
-  width: 3.5em;
-}
-
 @media (max-width: 1018px) and (min-width: 768px) {
   .bloco-sobre-campanha {
     margin: 0 auto;
@@ -118,14 +106,6 @@
     font-size: 20px;
     line-height: 25px;
     text-align: center;
-  }
-
-  .lista-despesas {
-    width: 90%;
-  }
-
-  .img-despesa {
-    width: 4.5em;
   }
 }
 
@@ -146,13 +126,6 @@
     line-height: 25px;
   }
 
-  .lista-despesas {
-    width: 90%;
-  }
-
-  .img-despesa {
-    width: 4.5em;
-  }
 }
 
 @media (min-width: 1141px) {
@@ -166,7 +139,6 @@
   .logo-sostems {
     width: 30%;
     margin-right: 5em;
-    margin-bottom: 10%;
   }
 
   .texto-sobre-campanha {
@@ -178,9 +150,6 @@
     font-size: 23px;
   }
 
-  .img-despesa {
-    width: 4.5em;
-  }
 
   .botao-ajude-agora {
     margin: 0;
@@ -201,19 +170,10 @@
   .logo-sostems {
     width: 35%;
     margin-right: 5em;
-    margin-bottom: 10%;
   }
 
   .texto-sobre-campanha {
     font-size: 20px;
     line-height: 25px;
-  }
-
-  .lista-despesas {
-    width: 90%;
-  }
-
-  .img-despesa {
-    width: 4.5em;
   }
 }

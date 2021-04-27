@@ -53,12 +53,14 @@ export class FormVideoComponent {
   enviar(): void {
     this.testemunhoService.createOrUpdate(this.depoimentoForm.value).then(() => alert("Depoimento enviado com sucesso!"), () => alert("Não foi possível enviar seu depoimento!"));
     this.formDirective.resetForm();
+    const botaoEnviar = (document.getElementById("images") as HTMLInputElement);
+    botaoEnviar.value = '';
   }
 
   async upload(event) {
     this.complete = false;
     const file = event.target.files[0];
-    const botaoEnviar = document.getElementById("images");
+    const botaoEnviar = (document.getElementById("images") as HTMLInputElement);
 
     if (file.size < 250000000) {
       const path = `videos/${this.depoimentoForm.controls['email'].value}`;
@@ -74,9 +76,9 @@ export class FormVideoComponent {
       });
       this.uploadPercent = this.task.percentageChanges();
     } else {
-      alert("Arquivo muito grande!");
-      botaoEnviar.setAttribute("isvalid", "false");
-      this.depoimentoForm.controls['depoimentoVideo'].setErrors(null);
+      alert("Seu vídeo não pode ser enviado porque o tamanho excede o limite permitido, tente enviar um tamanho menor (até 250 mb)");
+      botaoEnviar.value = '';
+      this.formDirective.resetForm();
     }
   }
 }

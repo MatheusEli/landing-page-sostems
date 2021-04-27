@@ -7,7 +7,7 @@
 }
 
 .formulario {
-  width: 90%;;
+  width: 90%;
   height: 51em;
   border-radius: 25px;
   box-shadow: 0px 0px 15px 0px #dcdcdc;
@@ -58,16 +58,14 @@
   display: block;
   margin: 0 auto;
   margin-top: 1em;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.botao-depoimento:disabled{
-
+.botao-depoimento:disabled {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.botao-depoimento:enabled{
-
+.botao-depoimento:enabled {
   background-color: #3685df;
 }
 
@@ -80,15 +78,21 @@
   color: #3685df;
 }
 
-.lgpd-form{
+.lgpd-form {
   margin-bottom: 1em !important;
 }
 
-.lgpd{
+.lgpd {
   cursor: pointer;
+  height: 2em;
+  width: 1.8em;
+}
+
+.lgpd-form {
+  display: flex;
+  align-items: center;
 }
 @media (min-width: 1141px) {
-
   .formulario {
     width: 88%;
     height: 41em;

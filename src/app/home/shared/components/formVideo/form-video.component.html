@@ -34,10 +34,10 @@
     </div>
 
 
-    <div class="form-control">
-        <input class="lgpd" formControlName="lgpd" type="checkbox" id="LGPD" name="LGPD" value="LGPD" />
-        <label class = "lgpd-label" for="LGPD" style="font-size: 13px; color: #757575"><a href="https://tems.com.br/politica-de-cookies/" target="_blank">Eu autorizo o uso dos meus dados pelo
-            TEMS</a></label>
+    <div class="form-control lgpd-form">
+        <input formControlName="lgpd" type="checkbox" id="LGPD" name="LGPD" value="LGPD" class="lgpd" />
+        <label for="LGPD" style="font-size: 13px; color: #757575">Eu aceito os termos da <a
+                href="https://tems.com.br/politica-de-cookies/" target="_blank">Política de Privacidade</a></label>
     </div>
 
     <lp-vmessage *ngIf="depoimentoForm.get('fullName')?.errors?.required

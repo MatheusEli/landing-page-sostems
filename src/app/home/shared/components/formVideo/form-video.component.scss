@@ -176,6 +176,12 @@
 
 .lgpd{
   cursor: pointer;
+  height: 2em;
+  width: 1.8em;
+}
+.lgpd-form {
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 1141px) {

@@ -1,4 +1,3 @@
-
 <form #form="ngForm" [formGroup]="depoimentoForm" class="formulario" (submit)="enviar()">
     <h4 class="titulo-cestas-sacolinhas">
         Depoimento em texto
@@ -9,7 +8,7 @@
     </div>
 
     <div class="form-control email">
-        <input #emailInput formControlName="email" placeholder="E-mail" class="form-input"/>
+        <input #emailInput formControlName="email" placeholder="E-mail" class="form-input" />
     </div>
 
     <div class="form-control celular">
@@ -31,9 +30,9 @@
 
 
     <div class="form-control lgpd-form">
-        <input formControlName="lgpd" type="checkbox" id="LGPD" name="LGPD" value="LGPD" class = "lgpd"/>
-        <label for="LGPD" style="font-size: 13px; color: #757575"><a href="https://tems.com.br/politica-de-cookies/" target="_blank">Eu autorizo o uso dos meus dados pelo
-            TEMS</a></label>
+        <input formControlName="lgpd" type="checkbox" id="LGPD" name="LGPD" value="LGPD" class="lgpd" />
+        <label for="LGPD" style="font-size: 13px; color: #757575">Eu aceito os termos da <a
+                href="https://tems.com.br/politica-de-cookies/" target="_blank">Política de Privacidade</a></label>
     </div>
 
     <lp-vmessage *ngIf="depoimentoForm.get('fullName')?.errors?.required

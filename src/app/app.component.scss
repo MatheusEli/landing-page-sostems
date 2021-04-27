@@ -46,7 +46,16 @@
   font-size: 36px;
   margin-left: 50px;
 }
+.botao-doar{
+  display: none;
+}
 
+.botao-pix-celular{
+  width: 18%;
+}
+.img-botao-pix-celular{
+  width: 100%;
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -201,9 +210,19 @@
 .sidebarIconToggle{
   display:block
 }
+
+.logo-TEMS {
+  width: 42%;
+}
 }
 
 @media (max-width: 1018px) and (min-width: 768px) {
+  .botao-doar{
+    display: block;
+  }
+  .botao-pix-celular{
+    display: none;
+  }
   .menu-mobile{
     display: none;
   }
@@ -261,6 +280,12 @@
 }
 
 @media (max-width: 1140px) and (min-width: 1019px) {
+  .botao-doar{
+    display: block;
+  }
+  .botao-pix-celular{
+    display: none;
+  }
   .menu-mobile{
     display: none;
   }
@@ -311,6 +336,12 @@
 }
 
 @media (min-width: 1141px) {
+  .botao-doar{
+    display: block;
+  }
+  .botao-pix-celular{
+    display: none;
+  }
   .menu-mobile{
     display: none;
   }
@@ -374,6 +405,12 @@
 }
 
 @media (min-width: 1600px) {
+  .botao-doar{
+    display: block;
+  }
+  .botao-pix-celular{
+    display: none;
+  }
   .menu-mobile{
     display: none;
   }
