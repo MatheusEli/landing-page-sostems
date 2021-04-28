@@ -13,6 +13,7 @@ import { environment } from '../environments/environment';
 import { LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 import { NgxLoadingModule } from 'ngx-loading';
+import { GoogleAnalyticsService } from './services/googleanalytics.service';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { NgxLoadingModule } from 'ngx-loading';
     RouterModule,
     NgxLoadingModule.forRoot({})
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }, GoogleAnalyticsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

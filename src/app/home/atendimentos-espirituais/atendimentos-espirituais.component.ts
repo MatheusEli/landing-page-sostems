@@ -1,5 +1,6 @@
 import { Router } from '@angular/router';
 import { Component } from "@angular/core";
+import { GoogleAnalyticsService } from 'src/app/services/googleanalytics.service';
 
 @Component({
     selector: 'lp-atendimentos-espirituais',
@@ -8,9 +9,10 @@ import { Component } from "@angular/core";
 })
 export class AtendimentosEspirituaisComponent{
 
-  constructor(private router: Router){}
+  constructor(private router: Router, private googleAnalyticsService: GoogleAnalyticsService){}
 
   mudaBloco(): void{
+    this.googleAnalyticsService.eventEmitter("projetos", "engagement", "click", "click", 1);
     this.router
     .navigate(['atendimentos-sociais'])
     .then(() =>

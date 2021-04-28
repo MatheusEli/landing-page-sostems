@@ -7,6 +7,7 @@ import {
     AngularFireUploadTask
 } from '@angular/fire/storage';
 import { Router } from '@angular/router';
+import { GoogleAnalyticsService } from "src/app/services/googleanalytics.service";
 
 @Component({
     selector: 'lp-testemunhos',
@@ -24,7 +25,13 @@ export class TestemunhosComponent {
     task: AngularFireUploadTask;
     complete: boolean;
 
-    constructor(private router: Router,private formBuilder: FormBuilder, private testemunhoService: TestemunhoService, private storage: AngularFireStorage) {
+    constructor(
+        private router: Router,
+        private formBuilder: FormBuilder,
+        private testemunhoService: TestemunhoService,
+        private storage: AngularFireStorage,
+        private googleAnalyticsService: GoogleAnalyticsService
+    ) {
         this.depoimentoForm = formBuilder.group({
             email: ['', [Validators.required, Validators.email]],
             fullName: [
@@ -68,13 +75,14 @@ export class TestemunhosComponent {
         this.inputFile.nativeElement.value = '';
     }
 
-  mudaBloco(): void{
-    this.router
-    .navigate(['sobre-campanha'])
-    .then(() =>
-      document
-        .getElementById('campanha')
-        .scrollIntoView({ behavior: 'smooth' })
-    );
-  }
+    mudaBloco(): void {
+        this.googleAnalyticsService.eventEmitter("sobre-nos", "engagement", "click", "click", 1);
+        this.router
+            .navigate(['sobre-campanha'])
+            .then(() =>
+                document
+                    .getElementById('campanha')
+                    .scrollIntoView({ behavior: 'smooth' })
+            );
+    }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GoogleAnalyticsService } from './services/googleanalytics.service';
 import {
   Event,
   NavigationCancel,
@@ -18,7 +19,7 @@ declare let gtag: Function;
 export class AppComponent {
   public loading = false;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private googleAnalyticsService: GoogleAnalyticsService) {
     this.router.events.subscribe((event: Event) => {
       switch (true) {
         case event instanceof NavigationStart: {
@@ -46,6 +47,7 @@ export class AppComponent {
 
   toSobre(): void {
     this.closeNav();
+    this.googleAnalyticsService.eventEmitter("sobre-nos", "engagement", "click", "click", 1);
     this.router
       .navigate(['sobre-campanha'])
       .then(() =>
@@ -56,6 +58,7 @@ export class AppComponent {
   }
   toAtendimentos(): void {
     this.closeNav();
+    this.googleAnalyticsService.eventEmitter("atendimentos", "engagement", "click", "click", 1);
     this.router
       .navigate(['atendimentos-espirituais'])
       .then(() =>
@@ -66,6 +69,7 @@ export class AppComponent {
   }
   toProjetos(): void {
     this.closeNav();
+    this.googleAnalyticsService.eventEmitter("projetos", "engagement", "click", "click", 1);
     this.router
       .navigate(['atendimentos-sociais'])
       .then(() =>
@@ -76,6 +80,7 @@ export class AppComponent {
   }
   toTransmissoes(): void {
     this.closeNav();
+    this.googleAnalyticsService.eventEmitter("lives", "engagement", "click", "click", 1);
     this.router
       .navigate(['transmissoes'])
       .then(() =>
@@ -86,6 +91,7 @@ export class AppComponent {
   }
   toDoacoes(): void {
     this.closeNav();
+    this.googleAnalyticsService.eventEmitter("como-ajudar", "engagement", "click", "click", 1);
     this.router
       .navigate(['importancia-doacao'])
       .then(() =>
@@ -94,6 +100,7 @@ export class AppComponent {
   }
   toTestemunhos(): void {
     this.closeNav();
+    this.googleAnalyticsService.eventEmitter("testemunhos", "engagement", "click", "click", 1);
     this.router
       .navigate(['testemunhos'])
       .then(() =>
