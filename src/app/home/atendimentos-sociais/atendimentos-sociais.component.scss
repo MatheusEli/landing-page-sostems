@@ -41,9 +41,9 @@
   width: 90%;
 }
 
-.numeros-linha-img{
+.numeros-linha-img {
   width: 15%;
-  margin: 0 .5em;
+  margin: 0;
 }
 
 .titulo-numeros {
@@ -63,17 +63,16 @@
   text-align: center;
 }
 
-.numeros-personalizado{
+.numeros-personalizado {
   color: #3685df;
   font-size: 22px;
   font-weight: 600;
-  padding-right: .5em;
+  padding-right: 0.5em;
 }
 .video-atendimentos-sociais {
   margin: 0 auto;
   margin-top: 3em;
 }
-
 
 .bolder {
   font-weight: 600;
@@ -102,11 +101,11 @@
   outline: none;
 }
 
-.botao-ajude-agora:hover{
+.botao-ajude-agora:hover {
   background-color: #fdfaf7;
   color: #ff7e00;
 
-  .botao-pix{
+  .botao-pix {
     color: #ff7e00;
   }
 }
@@ -115,7 +114,7 @@
   color: white;
 }
 
-.botao-pix:hover{
+.botao-pix:hover {
   color: #ff7e00;
 }
 .bloco-atendimentos-sociais {
@@ -146,11 +145,11 @@
   padding-bottom: 1em;
 }
 
-.slide-cestas{
+.slide-cestas {
   order: 2;
 }
 
-.texto-cestas{
+.texto-cestas {
   order: 1;
 }
 .slide {
@@ -172,12 +171,11 @@
   margin-bottom: 0.5em;
 }
 
-.titulo-cestas-sacolinhas:last-of-type{
+.titulo-cestas-sacolinhas:last-of-type {
   margin-top: 0;
 }
 
-
-.bloco-numeros-sacolinha{
+.bloco-numeros-sacolinha {
   background-color: white;
   box-shadow: 0px 5px 10px 0px #dcdcdc;
   border-radius: 25px;
@@ -186,24 +184,23 @@
   align-items: center;
 }
 
-
 .numeros-linha-sacolinha {
   margin: 1em auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   text-align: left;
-  padding: .6em 0;
+  padding: 0.6em 0;
 }
 
-.numeros-linha-sacolinha:nth-child(2) .numeros-sacolinha{
+.numeros-linha-sacolinha:nth-child(2) .numeros-sacolinha {
   text-align: center;
   margin: 0 auto;
 }
 
-.numeros-linha-img-sacolinha{
+.numeros-linha-img-sacolinha {
   width: 25%;
-  margin: 0 .5em;
+  margin: 0 0.5em;
 }
 
 .numeros-sacolinha {
@@ -228,7 +225,7 @@
   background-color: transparent;
 }
 
-.next-button-img{
+.next-button-img {
   width: 100px;
   height: 100px;
 }
@@ -237,11 +234,11 @@
     padding: 4em 0;
   }
 
-  .slide-cestas{
+  .slide-cestas {
     order: 1;
   }
 
-  .texto-cestas{
+  .texto-cestas {
     order: 2;
   }
 
@@ -269,45 +266,51 @@
     margin-bottom: 0.7em;
   }
 
-  .titulo-numeros{
+  .titulo-numeros {
     padding: 0 1em;
     font-size: 28px;
     width: 80%;
     text-align: left;
   }
 
-  .bloco-numeros{
+  .bloco-numeros {
     display: flex;
     align-items: center;
     padding-bottom: 0;
   }
 
-  .bloco-numeros-texto{
+  .bloco-numeros-texto {
     width: 120%;
   }
 
-  .numeros-linha{
+  .numeros-linha {
     margin: 1em auto;
-    padding: .3em 0;
+    padding: 0.3em 0;
   }
 
-  .bloco-numeros-sacolinha-div{
+  .bloco-numeros-sacolinha-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .numeros-linha-sacolinha{
+  .numeros-linha-sacolinha {
     width: 33%;
   }
 
-  .numeros-linha-sacolinha:nth-child(2) .numeros-sacolinha{
+  .numeros-linha-img {
+    width: 11%;
+    margin-right: 2em;
+    margin-left: 0.5em;
+  }
+
+  .numeros-linha-sacolinha:nth-child(2) .numeros-sacolinha {
     text-align: center;
     font-size: 40px;
     margin: 0 auto;
   }
 
-  .botao-ajude-agora{
+  .botao-ajude-agora {
     width: 75%;
   }
 }
@@ -321,11 +324,11 @@
     font-size: 50px;
   }
 
-  .slide-cestas{
+  .slide-cestas {
     order: 1;
   }
 
-  .texto-cestas{
+  .texto-cestas {
     order: 2;
   }
 
@@ -359,53 +362,59 @@
     text-align: left;
   }
 
-  .titulo-numeros{
+  .titulo-numeros {
     padding: 0 1em;
     font-size: 28px;
     width: 80%;
     text-align: left;
   }
 
-  .bloco-numeros{
+  .bloco-numeros {
     display: flex;
     align-items: center;
     padding-bottom: 0;
   }
 
-  .bloco-numeros-texto{
+  .bloco-numeros-texto {
     width: 90%;
   }
 
-  .numeros-linha{
+  .numeros-linha {
     margin: 1em auto;
-    padding: .3em 0;
+    padding: 0.3em 0;
   }
 
-  .bloco-numeros-sacolinha-div{
+  .numeros-linha-img {
+    width: 11%;
+    margin-right: 2em;
+    margin-left: 0.5em;
+  }
+
+  .bloco-numeros-sacolinha-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .numeros-linha-sacolinha{
+  .numeros-linha-sacolinha {
     width: 100%;
   }
 
-  .numeros-linha-sacolinha:nth-child(2) .numeros-sacolinha{
+  .numeros-linha-sacolinha:nth-child(2) .numeros-sacolinha {
     text-align: center;
     font-size: 30px;
     margin: 0 auto;
   }
 
-  .bloco-numeros-sacolinha{
+  .bloco-numeros-sacolinha {
     margin-bottom: 5em;
     padding: 1em 0;
     border-radius: 35px;
   }
-  .bloco-numeros-sacolinha-div{
+  .bloco-numeros-sacolinha-div {
     width: 80%;
   }
-  .botao-ajude-agora{
+  .botao-ajude-agora {
     width: 75%;
   }
 }
@@ -420,11 +429,11 @@
     font-size: 55px;
   }
 
-  .slide-cestas{
+  .slide-cestas {
     order: 1;
   }
 
-  .texto-cestas{
+  .texto-cestas {
     order: 2;
   }
 
@@ -433,7 +442,7 @@
     margin-top: 7em;
   }
 
-  .bloco-atendimentos-sociais-cestas-sacolinhas{
+  .bloco-atendimentos-sociais-cestas-sacolinhas {
     margin-bottom: 4em;
   }
 
@@ -447,12 +456,12 @@
     width: 55%;
   }
 
-  .bloco-texto-cestas-sacolinhas{
+  .bloco-texto-cestas-sacolinhas {
     margin-left: 0;
     margin-right: 2em;
   }
 
-  .bloco-atendimentos-sociais-cestas-sacolinhas:first-of-type .bloco-texto-cestas-sacolinhas{
+  .bloco-atendimentos-sociais-cestas-sacolinhas:first-of-type .bloco-texto-cestas-sacolinhas {
     margin-left: 2em;
     margin-right: 0;
   }
@@ -474,7 +483,7 @@
     text-align: left;
   }
 
-  .titulo-numeros{
+  .titulo-numeros {
     padding: 0 1em;
     font-size: 35px;
     line-height: 40px;
@@ -482,7 +491,7 @@
     text-align: left;
   }
 
-  .bloco-numeros{
+  .bloco-numeros {
     width: 97%;
     display: flex;
     align-items: center;
@@ -493,76 +502,77 @@
     margin-bottom: 10em;
   }
 
-  .bloco-numeros-texto{
+  .bloco-numeros-texto {
     width: 90%;
   }
 
-  .numeros-linha{
+  .numeros-linha {
     margin: 1em 0;
-    padding: .3em 1.2em;
+    padding: 0.3em 1.2em;
     width: fit-content;
     border-radius: 22px;
   }
 
-  .numeros-personalizado{
+  .numeros-personalizado {
     font-size: 28px;
   }
 
-  .bloco-numeros-texto{
+  .bloco-numeros-texto {
     width: fit-content;
     margin-right: 1em;
   }
 
-  .numeros-linha-img{
-    width: 15%;
+  .numeros-linha-img {
+    width: 11%;
+    margin-right: 2em;
+    margin-left: 0.5em;
   }
 
-  .numeros-texto{
+  .numeros-texto {
     font-size: 17px;
   }
 
-  .bloco-numeros-sacolinha-div{
+  .bloco-numeros-sacolinha-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .numeros-linha-sacolinha:nth-child(odd){
+  .numeros-linha-sacolinha:nth-child(odd) {
     width: 18em;
   }
 
-  .numeros-linha-sacolinha:nth-child(2) .numeros-sacolinha{
+  .numeros-linha-sacolinha:nth-child(2) .numeros-sacolinha {
     text-align: center;
     font-size: 60px;
     margin: 0 auto;
   }
 
-  .numeros-texto-sacolinha{
+  .numeros-texto-sacolinha {
     font-size: 15px;
   }
 
-  .bloco-numeros-sacolinha{
+  .bloco-numeros-sacolinha {
     margin-bottom: 4em;
     padding: 1em 0;
     border-radius: 35px;
   }
 
-  .numeros-sacolinha{
+  .numeros-sacolinha {
     font-size: 35px;
-    margin-bottom: .2em;
+    margin-bottom: 0.2em;
   }
 
-  .numeros-linha-sacolinha{
-    margin: .2em auto;
+  .numeros-linha-sacolinha {
+    margin: 0.2em auto;
   }
-  .bloco-numeros-sacolinha-div{
+  .bloco-numeros-sacolinha-div {
     width: 100%;
   }
-  .botao-ajude-agora{
+  .botao-ajude-agora {
     font-size: 1.5em;
     width: 75%;
   }
-
 }
 
 @media (min-width: 1600px) {
@@ -575,11 +585,11 @@
     font-size: 55px;
   }
 
-  .slide-cestas{
+  .slide-cestas {
     order: 1;
   }
 
-  .texto-cestas{
+  .texto-cestas {
     order: 2;
   }
 
@@ -588,7 +598,7 @@
     margin-top: 7em;
   }
 
-  .bloco-atendimentos-sociais-cestas-sacolinhas{
+  .bloco-atendimentos-sociais-cestas-sacolinhas {
     margin-bottom: 4em;
   }
 
@@ -602,12 +612,12 @@
     width: 55%;
   }
 
-  .bloco-texto-cestas-sacolinhas{
+  .bloco-texto-cestas-sacolinhas {
     margin-left: 0;
     margin-right: 2em;
   }
 
-  .bloco-atendimentos-sociais-cestas-sacolinhas:first-of-type .bloco-texto-cestas-sacolinhas{
+  .bloco-atendimentos-sociais-cestas-sacolinhas:first-of-type .bloco-texto-cestas-sacolinhas {
     margin-left: 2em;
     margin-right: 0;
   }
@@ -629,7 +639,7 @@
     text-align: left;
   }
 
-  .titulo-numeros{
+  .titulo-numeros {
     padding: 0 1em;
     font-size: 35px;
     line-height: 40px;
@@ -637,7 +647,7 @@
     text-align: left;
   }
 
-  .bloco-numeros{
+  .bloco-numeros {
     width: 97%;
     display: flex;
     align-items: center;
@@ -648,72 +658,74 @@
     margin-bottom: 10em;
   }
 
-  .bloco-numeros-texto{
+  .bloco-numeros-texto {
     width: 90%;
   }
 
-  .numeros-linha{
+  .numeros-linha {
     margin: 1em 0;
-    padding: .3em 1.2em;
+    padding: 0.3em 1.2em;
     width: fit-content;
     border-radius: 22px;
   }
 
-  .numeros-personalizado{
+  .numeros-personalizado {
     font-size: 28px;
   }
 
-  .bloco-numeros-texto{
+  .bloco-numeros-texto {
     width: fit-content;
     margin-right: 1em;
   }
 
-  .numeros-linha-img{
-    width: 15%;
+  .numeros-linha-img {
+    width: 11%;
+    margin-right: 2em;
+    margin-left: 0.5em;
   }
 
-  .numeros-texto{
+  .numeros-texto {
     font-size: 17px;
   }
 
-  .bloco-numeros-sacolinha-div{
+  .bloco-numeros-sacolinha-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .numeros-linha-sacolinha:nth-child(odd){
+  .numeros-linha-sacolinha:nth-child(odd) {
     width: 18em;
   }
 
-  .numeros-linha-sacolinha:nth-child(2) .numeros-sacolinha{
+  .numeros-linha-sacolinha:nth-child(2) .numeros-sacolinha {
     text-align: center;
     font-size: 60px;
     margin: 0 auto;
   }
 
-  .numeros-texto-sacolinha{
+  .numeros-texto-sacolinha {
     font-size: 15px;
   }
 
-  .bloco-numeros-sacolinha{
+  .bloco-numeros-sacolinha {
     margin-bottom: 4em;
     padding: 1em 0;
     border-radius: 35px;
   }
 
-  .numeros-sacolinha{
+  .numeros-sacolinha {
     font-size: 35px;
-    margin-bottom: .2em;
+    margin-bottom: 0.2em;
   }
 
-  .numeros-linha-sacolinha{
-    margin: .2em auto;
+  .numeros-linha-sacolinha {
+    margin: 0.2em auto;
   }
-  .bloco-numeros-sacolinha-div{
+  .bloco-numeros-sacolinha-div {
     width: 100%;
   }
-  .botao-ajude-agora{
+  .botao-ajude-agora {
     font-size: 1.5em;
     width: 75%;
   }
