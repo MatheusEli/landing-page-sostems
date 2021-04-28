@@ -8,7 +8,7 @@
 
 .formulario {
   width: 90%;
-  height: 51em;
+  height: 100%;
   border-radius: 25px;
   box-shadow: 0px 0px 15px 0px #dcdcdc;
   background-color: white;
@@ -178,6 +178,7 @@
   cursor: pointer;
   height: 2em;
   width: 1.8em;
+  margin-right: 1.5em;
 }
 .lgpd-form {
   display: flex;
@@ -188,7 +189,6 @@
 
   .formulario {
     width: 88%;
-    height: 41em;
     border-radius: 35px;
     box-shadow: 0px 0px 15px 0px #dcdcdc;
     background-color: white;
