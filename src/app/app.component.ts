@@ -17,6 +17,7 @@ declare let gtag: Function;
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  
   public loading = false;
 
   constructor(private router: Router, private googleAnalyticsService: GoogleAnalyticsService) {

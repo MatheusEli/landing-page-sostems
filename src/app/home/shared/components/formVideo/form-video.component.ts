@@ -19,6 +19,7 @@ import { TestemunhoService } from 'src/app/services/testemunhos.service';
   styleUrls: ['./form-video.component.scss'],
 })
 export class FormVideoComponent {
+  public loading = false;
   depoimentoForm: FormGroup;
   @ViewChild('form') private formDirective: NgForm;
   //Para upload do video
@@ -59,6 +60,7 @@ export class FormVideoComponent {
 
   async upload(event) {
     this.complete = false;
+    this.loading = true;
     const file = event.target.files[0];
     const botaoEnviar = (document.getElementById("images") as HTMLInputElement);
 
@@ -69,6 +71,7 @@ export class FormVideoComponent {
       this.task.then((up) => {
         fileRef.getDownloadURL().subscribe((url) => {
           this.complete = true;
+          this.loading = false;
           this.depoimentoForm.patchValue({
             depoimentoVideo: url,
           });
@@ -77,6 +80,7 @@ export class FormVideoComponent {
       this.uploadPercent = this.task.percentageChanges();
     } else {
       alert("Seu vídeo não pode ser enviado porque o tamanho excede o limite permitido, tente enviar um tamanho menor (até 250 mb)");
+      this.loading = false;
       botaoEnviar.value = '';
       this.formDirective.resetForm();
     }

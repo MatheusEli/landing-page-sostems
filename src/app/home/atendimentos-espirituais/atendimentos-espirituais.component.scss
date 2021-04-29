@@ -84,6 +84,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
 }
 
 .img-atendimentos-espirituais {
@@ -154,8 +155,7 @@
   }
   
   .next-button-img{
-    width: 100px;
-    height: 100px;
+    width: 18em;
   }
 @media (max-width: 1018px) and (min-width: 768px) {
     .bloco-atendimentos-espirituais {

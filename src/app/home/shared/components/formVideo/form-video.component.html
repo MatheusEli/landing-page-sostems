@@ -1,4 +1,5 @@
 <form #form="ngForm" [formGroup]="depoimentoForm" class="formulario" (submit)="enviar()">
+    <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px', fullScreenBackdrop: true }"></ngx-loading>
     <h4 class="titulo-cestas-sacolinhas">
         Depoimento em vídeo
     </h4>
