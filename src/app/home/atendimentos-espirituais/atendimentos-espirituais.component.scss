@@ -60,11 +60,11 @@
     outline: none;
 }
 
-.botao-quero-doar:hover{
+.botao-quero-doar:hover {
     background-color: white;
     color: #3685df;
 
-    .botao-pix{
+    .botao-pix {
         color: #3685df;
     }
 }
@@ -74,7 +74,7 @@
     color: white;
 }
 
-.botao-pix:hover{
+.botao-pix:hover {
     color: #3685df;
 }
 .bloco-atendimentos-espirituais {
@@ -152,11 +152,11 @@
     margin: 0 auto;
     margin-top: 5em;
     background-color: transparent;
-  }
-  
-  .next-button-img{
+}
+
+.next-button-img {
     width: 18em;
-  }
+}
 @media (max-width: 1018px) and (min-width: 768px) {
     .bloco-atendimentos-espirituais {
         margin: 4em auto;
@@ -396,12 +396,17 @@
         font-size: 25px;
     }
 
+    .numeros-linha:nth-child(1) {
+        border-right: 1px solid #dcdcdc;
+        padding-right: 10%;
+    }
     .numeros-linha:nth-child(2) {
         padding: 0 1.8em;
-        border-top: none;
-        border-bottom: none;
-        border-right: 1px solid #dcdcdc;
+        border: none;
+    }
+    .numeros-linha:nth-child(3) {
         border-left: 1px solid #dcdcdc;
+        padding-left: 10%;
     }
 
     .numeros-linha {
@@ -498,12 +503,17 @@
         font-size: 25px;
     }
 
+    .numeros-linha:nth-child(1) {
+        border-right: 1px solid #dcdcdc;
+        padding-right: 9%;
+    }
     .numeros-linha:nth-child(2) {
         padding: 0 1.8em;
-        border-top: none;
-        border-bottom: none;
-        border-right: 1px solid #dcdcdc;
+        border: none;
+    }
+    .numeros-linha:nth-child(3) {
         border-left: 1px solid #dcdcdc;
+        padding-left: 9%;
     }
 
     .numeros-linha {
