@@ -2,7 +2,7 @@
   font-family: "Montserrat";
 }
 
-.container-main{
+.container-main {
   background-color: white;
 }
 
@@ -23,7 +23,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 23px;
-  margin: .5em auto;
+  margin: 0.5em auto;
   padding-bottom: 1em;
   color: white;
   display: block;
@@ -31,7 +31,7 @@
   border-bottom: 1px solid gray;
 }
 
-.sidenav a:first-of-type{
+.sidenav a:first-of-type {
   border-bottom: none;
 }
 
@@ -39,7 +39,7 @@
   color: #f1f1f1;
 }
 
-.sidenav a:active{
+.sidenav a:active {
   color: #3685df;
 }
 
@@ -50,21 +50,24 @@
   font-size: 36px;
   margin-left: 50px;
 }
-.botao-doar{
+.botao-doar {
   display: none;
 }
 
-.botao-pix-celular{
+.botao-pix-celular {
   width: 18%;
 }
-.img-botao-pix-celular{
+.img-botao-pix-celular {
   width: 100%;
 }
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
-
 
 .bloco-menu-principal {
   background-color: black;
@@ -72,10 +75,6 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: auto 100%;
-}
-
-.bloco-principal {
-  background-color: rgba(1, 1, 1, 0.5);
 }
 
 .hamburger-inner::after,
@@ -136,11 +135,10 @@
   outline: none;
 }
 .botao-doar:hover {
-
   background-color: black;
   color: #3685df;
 
-  .botao-pix{
+  .botao-pix {
     color: #3685df;
   }
 }
@@ -159,7 +157,6 @@
   height: 4.5em;
   border-radius: 100%;
 }
-
 
 .botao-pix {
   text-decoration: none;
@@ -205,29 +202,29 @@
   padding-bottom: 30%;
 }
 
-.sidebarIconToggle{
-  display:none
+.sidebarIconToggle {
+  display: none;
 }
-
 
 @media screen and (max-width: 750px) {
-.sidebarIconToggle{
-  display:block
-}
+  .sidebarIconToggle {
+    display: block;
+  }
 
-.logo-TEMS {
-  width: 42%;
-}
+  .logo-TEMS {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 @media (max-width: 1018px) and (min-width: 768px) {
-  .botao-doar{
+  .botao-doar {
     display: block;
   }
-  .botao-pix-celular{
+  .botao-pix-celular {
     display: none;
   }
-  .menu-mobile{
+  .menu-mobile {
     display: none;
   }
   .cabecalho {
@@ -281,16 +278,20 @@
   .bloco-principal {
     padding-bottom: 20%;
   }
+
+  .bloco-menu-principal {
+    background-size: 100%;
+  }
 }
 
 @media (max-width: 1140px) and (min-width: 1019px) {
-  .botao-doar{
+  .botao-doar {
     display: block;
   }
-  .botao-pix-celular{
+  .botao-pix-celular {
     display: none;
   }
-  .menu-mobile{
+  .menu-mobile {
     display: none;
   }
   .cabecalho {
@@ -337,20 +338,23 @@
   .bloco-principal {
     padding-bottom: 20%;
   }
+  .bloco-menu-principal {
+    background-size: 100%;
+  }
 }
 
 @media (min-width: 1141px) {
-  .botao-doar{
+  .botao-doar {
     display: block;
   }
-  .botao-pix-celular{
+  .botao-pix-celular {
     display: none;
   }
-  .menu-mobile{
+  .menu-mobile {
     display: none;
   }
   .bloco-menu-principal {
-    background-size: 135%;
+    background-size: 100%;
   }
 
   .bloco-principal {
@@ -409,18 +413,18 @@
 }
 
 @media (min-width: 1600px) {
-  .botao-doar{
+  .botao-doar {
     display: block;
   }
-  .botao-pix-celular{
+  .botao-pix-celular {
     display: none;
   }
-  .menu-mobile{
+  .menu-mobile {
     display: none;
   }
 
   .bloco-menu-principal {
-    background-size: 125%;
+    background-size: 100%;
   }
 
   .bloco-principal {
