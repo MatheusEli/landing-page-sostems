@@ -3,10 +3,13 @@
     <h4 class="titulo-personalizado">Você faz parte</h4>
     <h1 class="titulo-principal">A Casa de Maria</h1>
 
-    <video class="video-sobre-casa" width="100%" controls preload>
+    <!--<video class="video-sobre-casa" width="100%" controls preload>
       <source width="100%" src="assets/MAT_NEU_GLR_QUEM_SOMOS_280421.mp4" type="video/mp4" />
       Your browser does not support the video tag.
-    </video>
+    </video>-->
+    <iframe class= "video-sobre-casa" width="100%" height="100%" src="https://www.youtube.com/embed/zGm-vEb5DIs" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
 
     <p class="texto-sobre-casa">
       O Templo Espiritual Maria Santíssima é uma casa religiosa, ecumênica, sem
@@ -64,8 +67,9 @@
           maneiras.</span>
       </p>
 
-      <button class="botao-ajude-agora"><a class = "botao-pix" href = "https://tems.com.br/doacao-pix/" target="_blank">QUERO AJUDAR</a></button>
-      <button class = "next-button" (click) = "mudaBloco()"><img class = "next-button-img" src = "assets/arrow4.png"></button>
+      <button class="botao-ajude-agora"><a class="botao-pix" href="https://tems.com.br/doacao-pix/"
+          target="_blank">QUERO AJUDAR</a></button>
+      <button class="next-button" (click)="mudaBloco()"><img class="next-button-img" src="assets/arrow4.png"></button>
     </section>
   </div>
 </section>
