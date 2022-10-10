@@ -1,4 +1,5 @@
 # Landing page SOS TEMS
+[![wakatime](https://wakatime.com/badge/github/MatheusEli/landing-page-sostems.svg)](https://wakatime.com/badge/github/MatheusEli/landing-page-sostems)
 
 https://tems.com.br/sostems/
 
